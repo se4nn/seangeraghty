@@ -1,0 +1,136 @@
+@font-face {
+  font-family: Argent CF;
+  font-weight: 200;
+  font-display: block;
+  src: url(./fonts/ArgentCF-Thin.otf);
+}
+
+@font-face {
+  font-family: Argent CF;
+  font-weight: 200;
+  font-display: block;
+  font-style: italic;
+  src: url(./fonts/ArgentCF-ThinItalic.otf);
+}
+
+@font-face {
+  font-family: Greycliff CF;
+  font-weight: 700;
+  font-display: block;
+  src: url(./fonts/GreycliffCF-Medium.otf);
+}
+
+body {
+  margin: 5vw;
+  max-width: 100%;
+}
+
+h1, h1 a {
+  font-family: Argent CF;
+  font-weight: 200;
+  font-size: clamp(48px, 13vw, 13vw);
+  color: #051827;
+  line-height: 125%;
+  letter-spacing: -0.02em;
+}
+
+h1 a {
+  font-style: italic;
+  text-decoration: none;
+}
+
+p, a {
+  font-family: Greycliff CF;
+  font-size: clamp(16px, 0.8vw, 40px);
+  line-height: 125%;
+  color: #051827;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 4vw;
+}
+
+h1 {
+  margin: 0 1vw;
+}
+
+h1 .link{
+  padding: 0px 1.5vw 1vw;
+  margin: 0 -1vw;
+}
+
+h1 .paint {
+  background: hsl(176 100% 63%);
+}
+
+h1 .cook {
+  background: hsl(304 100% 70%)
+}
+
+h1 .design {
+  background: hsl(64 100% 50%);
+}
+
+nav .links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+nav p, nav a {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+nav a {
+  padding: 0 8px 0 0;
+}
+
+nav a.paint {
+  border-right: solid 8px hsl(176 100% 63%);
+}
+
+nav a.cook {
+  border-right: solid 8px hsl(304 100% 70%)
+}
+
+nav a.design {
+  border-right: solid 8px hsl(64 100% 50%);
+}
+
+.instagram {
+  width: 90vw;
+  overflow-x: scroll;
+  padding: 10vw 0 0;
+}
+
+.instagram-feed {
+  width: 200vw !important;
+}
+
+/* Hover States */
+
+h1 .paint:hover {
+  background: url('./img/art.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 720px) {
+
+  nav .links {
+    display: none;
+  }
+
+  nav p, nav a {
+    font-size: clamp(16px,3.9vw, 40px);
+    margin: 0 auto;
+  }
+
+}
