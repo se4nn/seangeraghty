@@ -15,9 +15,13 @@
 
 @font-face {
   font-family: Greycliff CF;
-  font-weight: 700;
+  font-weight: 500;
   font-display: block;
   src: url(./fonts/GreycliffCF-Medium.otf);
+}
+
+* {
+  transition: all 0.2s ease;
 }
 
 body {
@@ -25,18 +29,33 @@ body {
   max-width: 100%;
 }
 
-h1, h1 a {
+body.dark {
+  background-color: #051827;
+}
+
+body.dark * {
+  color: #fff;
+}
+
+h1, h1 a, h2, .intro p {
   font-family: Argent CF;
   font-weight: 200;
-  font-size: clamp(48px, 13vw, 13vw);
-  color: #051827;
   line-height: 125%;
   letter-spacing: -0.02em;
+}
+
+h1, h1 a {
+  font-size: clamp(48px, 13vw, 13vw);
+  color: #051827;
 }
 
 h1 a {
   font-style: italic;
   text-decoration: none;
+}
+
+h2 {
+  font-size: clamp(32px, 8vw, 8vw);
 }
 
 p, a {
@@ -45,6 +64,11 @@ p, a {
   line-height: 125%;
   color: #051827;
   text-decoration: none;
+}
+
+.intro p {
+  font-size: clamp(16px, 2.4vw, 40px);
+  line-height: 140%;
 }
 
 nav {
@@ -78,28 +102,33 @@ h1 .design {
 nav .links {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 16px;
 }
 
 nav p, nav a {
-  font-weight: 700;
+  font-weight: 500;
   text-transform: uppercase;
 }
 
-nav a {
-  padding: 0 8px 0 0;
+nav .links a {
+  padding: 4px 8px;
+  border-right: 8px solid;
 }
 
-nav a.paint {
-  border-right: solid 8px hsl(176 100% 63%);
+nav .links a.paint {
+  border-color: hsl(176 100% 63%);
 }
 
-nav a.cook {
-  border-right: solid 8px hsl(304 100% 70%)
+nav a.paint.active{
+  background-color: hsl(176 100% 63%);
 }
 
-nav a.design {
-  border-right: solid 8px hsl(64 100% 50%);
+nav .links a.cook {
+  border-color: hsl(304 100% 70%);
+}
+
+nav .links a.design {
+  border-color: hsl(64 100% 50%);
 }
 
 .instagram {
@@ -112,6 +141,23 @@ nav a.design {
   width: 200vw !important;
 }
 
+.intro {
+  margin-bottom: 4vw;
+}
+
+.painting {
+  width: 100%;
+  max-height: 100%;
+  height: auto;
+}
+
+.caption {
+  font-family: Argent CF;
+  font-size: clamp(24px, 4vw, 48px);
+  margin: 1.6vw 0 4vw;
+  font-weight: 200;
+}
+
 /* Hover States */
 
 h1 .paint:hover {
@@ -119,6 +165,26 @@ h1 .paint:hover {
   background-size: cover;
   background-position: center;
 }
+
+nav .links a:hover, nav a.active {
+  border-width: 0;
+  padding: 4px 12px;
+  color: #051827;
+}
+
+nav .links .paint:hover {
+  background: hsl(176 100% 63%);
+}
+
+nav .links .cook:hover {
+  background: hsl(304 100% 70%);
+}
+
+nav .links .design:hover {
+  background: hsl(64 100% 50%);
+}
+
+
 
 /* Media Queries */
 
