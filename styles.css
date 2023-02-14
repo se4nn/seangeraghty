@@ -54,6 +54,10 @@ h1 a {
   text-decoration: none;
 }
 
+body.dark h1 a {
+  color: #051827;
+}
+
 h2 {
   font-size: clamp(32px, 8vw, 8vw);
 }
@@ -74,6 +78,7 @@ p, a {
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
   margin-bottom: 4vw;
 }
@@ -105,7 +110,7 @@ nav .links {
   gap: 16px;
 }
 
-nav p, nav a {
+nav a {
   font-weight: 500;
   text-transform: uppercase;
 }
@@ -194,9 +199,20 @@ nav .links .design:hover {
     display: none;
   }
 
-  nav p, nav a {
-    font-size: clamp(16px,3.9vw, 40px);
-    margin: 0 auto;
+}
+
+@media (prefers-color-scheme: dark) {
+
+  body {
+    background-color: #051827;
+  }
+  
+  body * {
+    color: #fff;
+  }
+
+  h1 a {
+    color: #051827;
   }
 
 }
