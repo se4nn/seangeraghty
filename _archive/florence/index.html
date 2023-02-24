@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title>Florence</title>
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="./styles.css">
+  <script type="text/javascript" src="./scripts.js"></script>
+  <link rel='shortcut icon' href='./favicon.ico' type='image/x-icon'/ >
+</head>
+<body>
+  <nav>
+    <a href="#"><img class="logo" src="./img/logo.svg"></a>
+    <div class="links" id="menu">
+      <a onclick="toggleMenu()" class="close_button"><img src="./img/close.svg"></a>
+      <h4 class="mobile_links_header">Links</h4>
+      <a href="#">Nurses & carers</a>
+      <a href="#">Care homes</a>
+    </div>
+    <a class="button purple" href="#">Sign In</a>
+    <a onclick="toggleMenu()" id="menu_button"><img src="./img/menu.svg"></a>
+  </nav>
+  <section class="hero hero_home">
+    <h1>Book shifts the easy way</h1>
+    <p>Florence is the online marketplace seamlessly connecting independent nurses and carers with the shifts they want. <strong>Take control.</strong></p>
+    <div class="buttons">
+      <a class="button purple">Sign up</a>
+      <a class="button pink">Learn more</a>
+    </div>
+  </section>
+  <section class="signup">
+    <div class="left">
+      <h2>Sign up with Florence in under a minute</h2>
+      <p>You'll need:</p>
+      <ul>
+        <li>NMC PIN (Nurses only)</li>
+        <li>At least one year of work experience</li>
+        <li>Enhanced DBS certificate</li>
+        <li>Up-to-date training certificates</li>
+        <li>Two references</li>
+        <li>Passport/Biometric ID Card (to confirm you identity)</li>
+      </ul>
+      <p><a href="/checklist">Click here</a> to see a detailed checklist of everything you need to start booking shifts on Florence.</p>
+    </div>
+    <div class="right bg_circle_purple">
+      <div class="form">
+        <div class="form_field">
+          <label for="fname">First name</label>
+          <input id="fname" type="text">
+        </div>
+        <div class="form_field">
+          <label for="sname">Last name</label>
+          <input id="sname" type="text">
+        </div>
+        <div class="form_field">
+          <label for="postcode">Postcode</label>
+          <input id="postcode" type="text">
+        </div>
+        <div class="form_field">
+          <label for="email">Email address</label>
+          <input id="email" type="email">
+        </div>
+        <div class="form_field">
+          <label for="password">Password</label>
+          <input id="password" type="password">
+        </div>
+        <div class="form_field">
+          <label for="password">Confirm password</label>
+          <input id="password" type="password">
+        </div>
+        <div class="form_field">
+          <label for="role">Job title</label>
+          <select name="role">
+            <option value="" disabled selected hidden>-</option>
+            <option value="carer">Carer</option>
+            <option value="nurse">Nurse</option>
+          </select>
+        </div>
+        <div class="form_field">
+          <label for="payment">How would you like to be paid?</label>
+          <select name="role">
+            <option value="" disabled selected hidden>-</option>
+            <option value="carer">Through my LTD company</option>
+            <option value="nurse">Through PAYE</option>
+          </select>
+        </div>
+        <div class="form_terms">
+          <label for="terms">I agree to Florence’s <a href="#">terms & conditions</a> and <a href="#">privacy policy</a></label>
+          <input id="terms" type="checkbox">
+        </div>
+        <div class="form_submit">
+          <a href="#">Unsure how you'd like to be paid?</a>
+          <input id="submit" type="submit" class="button purple" value="Sign up">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="middle purple">
+    <div class="fw_img worker_to_client">
+      <img src="./img/worker_to_client.png">
+      <img src="./img/worker_to_client_mobile.png">
+    </div>   
+    <h2>Florence connects nurses and carers to care homes across the UK</h2>
+    <p>We’re streamlining the process of booking temporary shifts, making it easier than ever to be an independent nurse or carer.</p>
+    <div class="buttons">
+      <a class="button">Sign up</a>
+    </div>
+  </section>
+  <section class="three_points">
+    <div class="point">
+      <img>
+      <h3>Homes post their available shifts to Florence daily</h3>
+      <p>All shifts posted to Florence include a full description, skill requirements, location and pay information.</p>
+    </div>
+    <div class="point">
+      <img>
+      <h3>Pick the shifts you want to work in one click</h3>
+      <p>Florence is free to use for nurses and carers and accessible from any device, including your mobile phone!</p>
+    </div>
+    <div class="point">
+      <img>
+      <h3>Submit your timesheet online, anytime, anywhere</h3>
+      <p>Your timesheet is sent straight to the care home and is approved online - no paper, no signatures, no hassle.</p>
+    </div>
+  </section>
+  <section class="pink how reorder">
+    <div class="left">
+      <h2>We’re the marketplace that puts you in control</h2>
+      <p>Whether you’re a nurse, carer or care home, Florence puts you back in the driving seat. Each shift page includes a detailed description, location information and the pay rate so both sides always know exactly what to expect.</p>
+      <div class="buttons">
+        <a class="button">Florence vs Agency</a>
+        <a class="button border">Sign up</a>
+      </div>
+    </div>
+    <div class="right bg_circle_pink">
+      <img src="./img/shifts.png" class="img_shifts">
+    </div>
+  </section>
+  <section class="green how">
+    <div class="left bg_circle_green">
+      <img src="./img/timesheets.png" class="img_sheets">
+    </div>
+    <div class="right">
+      <h2>View your upcoming work schedule and manage your payments online</h2>
+      <p>With Florence, you can easily manage your work schedule, view your upcoming shifts and submit timesheets from anywhere.</p>
+      <p>No more paper timesheets means no more signatures.<br>Oh and it’s better for the environment too!</p>
+      <div class="buttons">
+        <a class="button">Sign up</a>
+      </div>
+    </div>
+  </section>
+  <section class="purple how reorder">
+    <div class="left">
+      <h2>Take the leap and become your own boss</h2>
+      <p>By booking your own shifts through Florence you set your own schedule and take control of your financial and professional life.</p>
+      <p>You can sample different workplaces, meet new people and travel across the UK to broaden your professional experience.</p>
+      <div class="buttons">
+        <a class="button">Sign up</a>
+      </div>
+    </div>
+    <div class="right bg_circle_purple">
+      <img src="./img/nav_shifts.png" class="img_nav_shifts">
+    </div>
+  </section>
+  <section class="yellow reorder">
+    <div class="left">
+      <div class="quote">
+        <h2>You can see all the available shifts, the money you'll earn and the location you have to go to...it's so easy to use</h2>
+        <div class="author">
+          <img src="./img/Florentina.jpg">
+          <div class="bio">
+            <h3>Florentina</h3>
+            <h4>Florence Nurse</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="right img_nurses"></div>
+  </section>
+  <section class="middle purple"> 
+    <h2>Sign up with Florence today </h2>
+    <p>Our platform allows care homes to communicate with and post shifts directly to nurses and carers across the country.</p>
+    <div class="buttons">
+      <a class="button">Sign up to Florence</a>
+    </div>
+  </section>
+  <div class="divider pink"></div>
+  <footer>
+    <section>
+      <div class="footer_left">
+        <ul>
+          <li class="title">Company</li>
+          <li><a href="./about.html">About us</a></li>
+          <li><a href="./careers.html">We're hiring</a></li>
+          <li><a href="#">Press centre</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Privacy policy</a></li>
+        </ul>
+        <ul>
+          <li class="title">Our Service</li>
+          <li><a href="#">How it works</a></li>
+          <li><a href="#">Sign up</a></li>
+        </ul>
+        <ul>
+          <li class="title">Learn</li>
+          <li><a href="#">Help centre</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer_lines"></div>
+    </section>
+    <script> </script>
+  </footer>

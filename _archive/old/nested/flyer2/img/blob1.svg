@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="43" height="45" viewBox="0 0 43 45">
+  <defs>
+    <path id="blob1-b" d="M16.4705882,36.5441176 C25.709175,36.5441176 35,26.7385868 35,17.5 C35,8.26141319 22.1062339,0 12.8676471,0 C3.62906025,0 0,9.03347202 0,18.2720588 C0,27.5106456 7.23200143,36.5441176 16.4705882,36.5441176 Z"/>
+    <filter id="blob1-a" width="140%" height="138.3%" x="-20%" y="-13.7%" filterUnits="objectBoundingBox">
+      <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.207843137   0 0 0 0 0.247058824   0 0 0 0 0.321568627  0 0 0 0.1 0"/>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(4 2)">
+    <use fill="#000" filter="url(#blob1-a)" xlink:href="#blob1-b"/>
+    <use fill="#FFCEB6" xlink:href="#blob1-b"/>
+    <polygon fill="#353F52" points="16.694 22 16.694 14.788 14.978 14.788 15.986 13.48 18.014 13.48 18.014 22"/>
+  </g>
+</svg>

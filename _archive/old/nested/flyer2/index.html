@@ -1,0 +1,70 @@
+<!Doctype>
+<html>
+  <head>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./styles.css">
+    <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+    <script src="./script.js"></script>
+    <title>Sold Flyer</title>
+    <meta charset=utf-8 />  
+    <!--[if IE]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="file-picker">
+      <h1>Sold near you</h1>
+      <p>Change the property image by clicking below</p>
+      <em><p>PS. Don't forget to change the address!</p></em>
+      <div>
+        <input class="inputfile" type='file' onchange="img1URL(this);" id="img1"/>
+      </div>
+    </div>
+    <div class="front page">
+      <div class="sold">
+        <h2>Sold</h2>
+      </div>
+      <label id="image1" alt="Image 1" for="img1"/>Click to add image</label>
+      <div class="address-price">
+          <input class="address" type="text" placeholder="Rita Road, SW8" value="Rita Road, SW8">
+      </div>
+      <img class="logo" src="./img/logo.svg">
+    </div>
+    <div class="back page">
+      <img class="logo" src="./img/logo.svg">
+      <div class="backcontent">
+        <div>
+          <h2>What we do at Nested</h2>
+          <p>We’re an estate agent that will achieve the best price for your home. Unlike other agents, we also fix an advance amount from day one, meaning you can move into your next home chain-free.</p>
+        </div>
+        <div class="quote"> 
+          <p>“A friend suggested them to me when I was having trouble selling through my traditional agent, and I'm so glad she did.”</p>
+          <p>Libby W</p>
+        </div>
+        <div class="tp">
+          <img src="./img/TP.svg"> <p>TrustScore 9.4 from 83 reviews</p>
+        </div>
+        <div class="signup">
+          <h2>Sign up in as little as 7 days</h2>
+          <div class="steps">
+            <div class="step">
+              <img src="./img/blob1.svg">
+              <p>Visit <em>nested.com</em> to book a call and get started</p>
+            </div>
+            <div class="step">
+              <img src="./img/blob2.svg">
+              <p>We’ll value your home, create a marketing startergy and fix your advance amount</p>
+            </div>
+            <div class="step">
+              <img src="./img/blob3.svg">
+              <p>We sell your home for the best price and you can choose to withdraw your advance</p>
+            </div>
+          </div>
+          <h2 class="contact">Visit <em>NESTED.COM</em> or Call <em>020 3858 0695</em></h2>
+        </div>
+      </div>
+    </div>
+    <button onclick="myFunction()" class="print">Save this leaflet</button>
+  </body>
+</html> 

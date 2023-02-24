@@ -1,0 +1,456 @@
+@font-face {
+  font-family: 'Euclid Square';
+  font-weight: 300;
+  font-display: swap;
+  src: url(./fonts/EuclidSquare-Light.otf);
+}
+
+@font-face {
+  font-family: 'Euclid Square';
+  font-weight: 500;
+  font-display: swap;
+  src: url(./fonts/EuclidSquare-Medium.otf);
+}
+
+@font-face {
+  font-family: 'Euclid Square';
+  font-weight: 300;
+  font-display: swap;
+  font-style: italic;
+  src: url(./fonts/EuclidSquare-LightItalic.otf);
+}
+
+@font-face {
+  font-family: 'Euclid Square';
+  font-weight: 500;
+  font-display: swap;
+  font-style: italic;
+  src: url(./fonts/EuclidSquare-MediumItalic.otf);
+}
+
+* {
+  font-family: 'Euclid Square', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0 auto;
+  background: url('./assets/background_pattern.png') no-repeat;
+  background-size: 1700px;
+  background-position: -100px -300px;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 56px;
+  color: #1D2630;
+  line-height: 72px;
+  max-width: 640px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 36px;
+  color: #1D2630;
+  line-height: 52px;
+  margin-bottom: 20px;
+  max-width: 560px
+}
+
+h3 {
+  font-size: 24px;
+  color: #1D2630;
+  text-align: left;
+  line-height: 36px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+h4 {
+  font-weight: 500;
+  font-size: 10px;
+  color: #5F6F81;
+  letter-spacing: 5px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+p, li, label {
+  font-weight: 300;
+  font-size: 16px;
+  color: #3D5066;
+  line-height: 28px;
+  max-width: 560px;
+}
+
+ul {
+  margin: 8px 0;
+}
+
+li::before {
+  content: "•";
+  color: #1D2630;
+  margin-right: 8px;
+}
+
+a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  color: #1D2630;
+  text-decoration: underline;
+}
+
+strong {
+  font-weight: 500;
+}
+
+.button, button {
+  padding: 12px 16px;
+  border-radius: 24px;
+  color: #fff;
+  font-size: 16px;
+  display: inline-block;
+  text-align: center;
+  line-height: 24px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.button.primary, button.primary {
+  background: #1D2630;
+  box-shadow: 0 10px 15px -10px rgba(29,38,48,0.50);
+  border-radius: 24px;
+}
+
+.button.border {
+  box-shadow: none!important;
+  border: 2px solid #1D2630;
+  padding: 8px 20px;
+  color: #1D2630;
+}
+
+p + p {
+  margin-top: 8px;
+}
+
+.buttons {
+  margin-top: 40px;
+  display: flex;
+}
+
+section {
+  margin: 80px auto;
+  padding: 0 80px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Content */
+
+nav {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding: 40px 80px;
+  justify-content: space-between;
+}
+
+nav a {
+  line-height: 0;
+}
+
+nav .logo {
+  font-size: 20px;
+  color: #3D5066;
+  line-height: 24px;
+  text-decoration: none;
+  max-width: 120px;
+}
+
+nav .links {
+  margin-left: auto;
+}
+
+nav .links a {
+  font-weight: 500;
+  font-size: 16px;
+  color: #3D5066;
+  height: 24px;
+  text-decoration: none;
+  margin-right: 24px;
+}
+
+nav a.button {
+  color: #fff;
+  margin-right: 0;;
+}
+
+.hero {
+  padding: 80px;
+  margin-top: 0;
+  flex-direction: column;
+}
+
+.homepage-hero {
+  background: url('./assets/national_care_force_message.png') no-repeat, url('./assets/nurse_phone.png') no-repeat;
+  background-size: 336px 136px, 400px 480px;
+  background-position: center right 120px, center right;
+}
+
+.hc-hero {
+  background: url('./assets/nurse_phone.png') no-repeat;
+  background-size: 400px 480px;
+  background-position: center right 120px;
+}
+
+.v-hero {
+  background: url('./assets/volunteer.png') no-repeat;
+  background-size: 210px 480px;
+  background-position: center right 240px;
+}
+
+.cp-hero {
+  background: url('./assets/care_providers.png') no-repeat;
+  background-size: 480px 480px;
+  background-position: center right 80px;
+}
+
+.hero .button {
+  min-width: 120px;
+  margin-right: 24px;
+}
+
+.hero p, .hero li {
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.hero p {
+  max-width: 50%;
+}
+
+input, select {
+  border: 1px solid #D0D6DC;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #1D2630;
+  line-height: 26px;
+  padding: 10px;
+  margin: 10px 0 20px;
+}
+
+select {
+  height: 48px;
+  background: #fff;
+}
+
+.center {
+  flex-direction: column;
+  align-items: center;
+}
+
+.center h2 {
+  text-align: center;
+  max-width: 640px;
+}
+
+.center p {
+  text-align: center;
+  max-width: 560px;
+}
+
+.three {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+
+.three .point {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc((100%/3) - 80px);
+  padding: 20px;
+  max-width: 400px;
+  margin-bottom: 40px;
+}
+
+.center h3, .center p {
+  text-align: center;
+}
+
+.point img.number {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 16px;
+}
+
+.three-buttons {
+  margin-top: 26px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.three-buttons .button{
+  width: 160px;
+  margin: 12px;
+}
+
+section.signup {
+  background: #fff;
+  padding: 160px 80px; 
+  margin: 160px auto 0;
+}
+
+.signup div {
+  max-width: calc(50% - 20px);
+}
+
+.signup .form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.signup .question, .how div {
+  display: flex;
+  flex-direction: column;
+  width: calc(50% - 20px);
+}
+
+.signup .question label {
+  font-weight: 500;
+}
+
+.signup .question input, .signup .question select {
+  border: 2px solid #D0D6DC;
+  border-radius: 8px;
+}
+
+.signup button {
+  height: 48px;
+  min-width: 160px;
+}
+
+.signup .checkbox {
+  flex-direction: row-reverse;
+}
+
+.signup .checkbox label {
+  margin-left: 8px;
+}
+
+footer {
+  background: #1D2630;
+  color: #fff;
+  display: flex;
+  padding: 28px;
+}
+
+footer p {
+  color: #fff;
+  font-weight: 500;
+}
+
+footer img {
+  margin-left: 8px;
+  height: 26px;
+}
+
+.how {
+  align-items: center;
+}
+
+.how img {
+  max-width: calc(50% - 20px);
+  height: auto;
+}
+
+.phone-alert {
+  width: 415px;
+  height: 280px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 1) {
+
+  h1 {
+    font-size: 36px;
+    line-height: 52px;
+    max-width: 100%;
+  }
+
+  h2 {
+    font-size: 32px;
+    line-height: 48px;
+  }
+
+  nav {
+    margin: 0;
+    padding: 24px 8px;
+  }
+  
+  section, section.hero {
+    margin: 40px 8px;
+    padding: 0;
+  }
+
+  section.signup {
+    padding: 24px 8px;
+    margin: 40px 0;
+  }
+
+  .hero {
+    padding: 0;
+    background: none;
+  }
+
+  .homepage-hero {
+    background: none;
+  }
+
+  .hero .buttons {
+    flex-direction: column;
+  }
+
+  .hero .button {
+    margin: 8px 0;
+  }
+
+  .three .point, .signup div, .hero p, .how div {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .three {
+    justify-content: center;
+  }
+
+  .signup .form {
+    margin-top: 40px;
+  }
+
+  .signup .question {
+    width: 100%;
+  }
+
+  .signup button {
+    width: 100%;
+    margin-top: 24px;
+  }
+
+  .how img {
+    max-width: 100%;
+    height: auto;
+  }
+
+}

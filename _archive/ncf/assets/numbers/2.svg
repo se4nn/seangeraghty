@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Website" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage" transform="translate(-680.000000, -960.000000)">
+            <g id="How-it-works" transform="translate(80.000000, 808.000000)">
+                <g id="2" transform="translate(440.000000, 152.000000)">
+                    <g transform="translate(160.000000, 0.000000)">
+                        <path d="M40,0 L64,0 C72.836556,-1.623249e-15 80,7.163444 80,16 L80,40 C80,62.09139 62.09139,80 40,80 C17.90861,80 2.705415e-15,62.09139 0,40 C-2.705415e-15,17.90861 17.90861,4.05812251e-15 40,0 Z" id="Rectangle" fill="#1D2630" transform="translate(40.000000, 40.000000) scale(1, -1) translate(-40.000000, -40.000000) "></path>
+                        <path d="M49.32,55 L49.32,50.68 L37.12,50.68 L44.2,43.88 C47.04,41.16 48.96,38.44 48.96,34.68 C48.96,29.36 45.08,26.12 40.16,26.12 C35.24,26.12 31.4,29.24 30.52,33.96 L34.84,34.92 C35.32,32.4 37.4,30.44 39.96,30.44 C42.68,30.44 44.56,32.44 44.56,34.88 C44.56,37.16 43.04,38.96 41.4,40.56 L30.36,51.2 L30.36,55 L49.32,55 Z" fill="#FFFFFF" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

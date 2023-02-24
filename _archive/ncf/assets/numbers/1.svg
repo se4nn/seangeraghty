@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>1</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Website" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage" transform="translate(-240.000000, -960.000000)">
+            <g id="How-it-works" transform="translate(80.000000, 808.000000)">
+                <g id="1" transform="translate(0.000000, 152.000000)">
+                    <g transform="translate(160.000000, 0.000000)">
+                        <path d="M40,0 L64,0 C72.836556,-1.623249e-15 80,7.163444 80,16 L80,40 C80,62.09139 62.09139,80 40,80 C17.90861,80 2.705415e-15,62.09139 0,40 C-2.705415e-15,17.90861 17.90861,4.05812251e-15 40,0 Z" id="Rectangle" fill="#1D2630"></path>
+                        <polygon fill="#FFFFFF" fill-rule="nonzero" points="49.52 55 49.52 50.84 42.48 50.84 42.48 26.6 33.04 26.6 33.04 30.96 38.08 30.96 38.08 50.84 31.08 50.84 31.08 55"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title>What do I need to register? - Florence</title>
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="./styles.css">
+  <script type="text/javascript" src="./scripts.js"></script>
+  <link rel='shortcut icon' href='./favicon.ico' type='image/x-icon'/ >
+</head>
+<body>
+  <nav>
+    <a href="#"><img class="logo" src="./img/logo.svg"></a>
+    <div class="links" id="menu">
+      <a onclick="toggleMenu()" class="close_button"><img src="./img/close.svg"></a>
+      <h4 class="mobile_links_header">Links</h4>
+      <a href="#">Nurses & carers</a>
+      <a href="#">Care Homes</a>
+    </div>
+    <a class="button purple" href="#">Sign In</a>
+    <a onclick="toggleMenu()" id="menu_button"><img src="./img/menu.svg"></a>
+  </nav>
+  <section class="hero hero_purple">
+    <h1>Registration checklist</h1>
+    <p>Here's everything you need to start booking shifts with Florence</p>
+  </section>
+  <section class="values purple reorder">
+    <div class="left">
+      <div class="registration_point">
+        <h3>NMC PIN (Nurses only)</h3>
+        <p>If you’re a nurse we require your 8-digit NMC PIN so we can check your registration with the NMC.</p>
+      </div>
+      <div class="registration_point">
+        <h3>Two references</h3>
+        <p>We need to collect two professional references for your application, so make sure you have 2 people that could act as your referee. We accept references from either:</p>
+        <ul>
+          <li>A care home manager or another equivalent level healthcare employer</li>
+          <li>Band 6 (or higher) nurse</li>
+          <li>Up to one representative of an agency you’re previously worked for in a healthcare role</li>
+        </ul>
+      </div>
+      <div class="registration_point">
+        <h3>Passport or Biometric ID Card</h3>
+        <p>To confirm your right to work in the UK we’ll need either a copy of your passport, a valid visa, or a biometric ID / residence card.</p>
+        <ul>
+          <li><a href="#">I'm British but I don't have a passport/it's expired</a></li>
+        </ul>
+      </div>
+      <div class="registration_point">
+        <h3>Enhance DBS certificate</h3>
+        <p>We need to see a picture of your enhanced DBS certificate. If it is more than one year old, we’ll also require your DBS Update Service ID. If you’re certificate is over a year old and you are not registered with the update service, read about how you can get registered and get a new certificate here.</p>
+      </div>
+      <div class="registration_point">
+        <h3>Up-to-date Training Certificates</h3>
+        <ul>
+          <li>Manual Handling</li>
+          <li>Health & Safety</li>
+          <li>Infection Control</li>
+          <li>Medication Administration (nurses only)</li>
+          <li>Safeguarding of Vulnerable Adults</li>
+          <li>Life Support</li>
+          <li>First Aid</li>
+          <li>Equality & Diversity</li>
+          <li>Fire Safety</li>
+          <li>Information Governance</li>
+          <li>Food Hygiene (carers only)</li>
+        </ul>
+        <p>If your certificates are more than a year old, you can complete your training for free on <a href="#">Florence Accademy</a></p>
+      </div>
+      <div class="registration_point">
+        <h3>At least one year of work experience</h3>
+        <p>You’ll need at least one year of experience to find work through Florence. The homes that use Florence require that you explain any gaps in your employment history.</p>
+      </div>
+    </div>
+    <div class="right">
+      <div class="title">
+        <h2>Get flexible access to thousands of shifts</h2>
+      </div>
+      <p>Registering with Florence takes just a few minutes, so soon you’ll be searching for and applying for shifts.</p>
+      <div class="buttons">
+        <a class="button purple">Sign up to Florence</a>
+      </div>
+    </div>
+  </section>
+  <div class="divider purple"></div>
+  <section class="signup center">
+    <h2>Sign up with Florence in under a minute</h2>
+    <p>Sign up to Florence and take control of your work life right away by entering your details in the form below.</p>
+    <div class="form">
+      <div class="form_field">
+        <label for="fname">First name</label>
+        <input id="fname" type="text">
+      </div>
+      <div class="form_field">
+        <label for="sname">Last name</label>
+        <input id="sname" type="text">
+      </div>
+      <div class="form_field">
+        <label for="postcode">Postcode</label>
+        <input id="postcode" type="text">
+      </div>
+      <div class="form_field">
+        <label for="email">Email address</label>
+        <input id="email" type="email">
+      </div>
+      <div class="form_field">
+        <label for="password">Password</label>
+        <input id="password" type="password">
+      </div>
+      <div class="form_field">
+        <label for="password">Confirm password</label>
+        <input id="password" type="password">
+      </div>
+      <div class="form_field">
+        <label for="role">Job title</label>
+        <select name="role">
+          <option value="" disabled selected hidden>-</option>
+          <option value="carer">Carer</option>
+          <option value="nurse">Nurse</option>
+        </select>
+      </div>
+      <div class="form_field">
+        <label for="payment">How would you like to be paid?</label>
+        <select name="role">
+          <option value="" disabled selected hidden>-</option>
+          <option value="carer">Through my LTD company</option>
+          <option value="nurse">Through PAYE</option>
+        </select>
+      </div>
+      <div class="form_terms">
+        <label for="terms">I agree to Florence’s <a href="#">terms & conditions</a> and <a href="#">privacy policy</a></label>
+        <input id="terms" type="checkbox">
+      </div>
+      <div class="form_submit">
+        <a href="#">Unsure how you'd like to be paid?</a>
+        <input id="submit" type="submit" class="button purple" value="Sign up">
+      </div>
+    </div>
+  </section>
+  <div class="divider pink"></div>
+  <footer>
+    <section>
+      <div class="footer_left">
+        <ul>
+          <li class="title">Company</li>
+          <li><a href="./about.html">About us</a></li>
+          <li><a href="./careers.html">We're hiring</a></li>
+          <li><a href="#">Press centre</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Privacy policy</a></li>
+        </ul>
+        <ul>
+          <li class="title">Our Service</li>
+          <li><a href="#">How it works</a></li>
+          <li><a href="#">Sign up</a></li>
+        </ul>
+        <ul>
+          <li class="title">Learn</li>
+          <li><a href="#">Help centre</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer_lines"></div>
+    </section>
+    <script> </script>
+  </footer>

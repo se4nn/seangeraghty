@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="description" content="">
+  <meta name="keywords" content="national care force carehome home volunteer florence">
+  <title>The National Care Force</title>
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel='shortcut icon' href='./favicon.ico' type='image/x-icon'/ >
+</head>
+<body>
+  <nav>
+    <a class="logo">National Care Force</a>
+    <div class="links">
+      <a href="#">Sign in</a>
+      <a href="#" class="button primary">Sign up</a>
+    </div>
+  </nav>
+  <section class="hero hc-hero">
+    <h1>Healthcare Workers</h1>
+    <p>A healthcare worker is someone who is qualified to work under any of these professional titles:</p>
+    <ul>
+        <li>Doctor</li>
+        <li>Nurse</li>
+        <li>Care Worker</li>
+        <li>Support Worker</li>
+        <li>Physiotherapist</li>
+        <li>Occupational Therapist</li>
+    </ul>
+    <p>If you work as any of these, you can sign up to the National Care Force as a healthcare worker.</p>
+    <div class="buttons">
+      <a href="#" class="button primary">Sign up</a>
+      <a href="#" class="button border">Learn more</a>
+    </div>
+  </section>
+  <section class="how">
+    <div>
+      <h2>How do I get involved?</h2>
+      <p>Once you've signed up to the National Care Force and have passed compliance screening, you'll be able to apply for shifts available on the platform.</p>
+      <p>This will mean covering clinical staff rota gaps in a variety of settings, from care homes to local authority services.</p>
+      <p>Such work will support fellow care professionals and ease the strain to services caused by extra users and staffing gaps during coronavirus.</p>
+    </div>
+    <img class="phone-alert" src="./assets/phone_alert.png">
+  </section>
+  <section class="signup">
+    <div>
+      <h3>Sign up to The National Care Force today</h3>
+      <p>Enter your details to join The National Care Force and help support the UK's response to COVID-19.</p>
+      <p>Register if you are a care provider, healthcare worker or want to volunteer to help the national effort to support the most vulnerable.</p>
+      <p>We'll in touch with next steps!</p>
+    </div>
+    <div class="form">
+      <div class="question">
+        <label for="fname">First Name</label>
+        <input type="text" placeholder="First Name" id="fname">
+      </div>
+      <div class="question">
+        <label for="lname">Last Name</label>
+        <input type="text" placeholder="Last Name" id="lname">
+      </div>
+      <div class="question">
+        <label for="email">Email Address</label>
+        <input type="text" placeholder="Email Address" id="email">
+      </div>
+      <div class="question">
+        <label for="phone">Phone Number</label>
+        <input type="tel" placeholder="Phone Number" id="phone">
+      </div>
+      <div class="question">
+        <label for="email">Your Postcode</label>
+        <input type="text" placeholder="Postcode" id="postcode">
+      </div>
+      <div class="question">
+        <label for="phone">Worker or Care Provider?</label>
+        <select name="type">
+          <option value="" disabled selected hidden>Select an option</option>
+          <option value="carer">Care provider</option>
+          <option value="nurse">Healthcare Worker</option>
+          <option value="nurse">Volunteer</option>
+        </select>
+      </div>
+      <div class="question checkbox">
+        <label for="confirmation">I am happy for The National Care Force to contact me with suitable opportunities</label>
+        <input type="checkbox" id="confirmation">
+      </div>
+      <button id="submit" class="primary">Submit</button>
+    </div>
+  </section>
+</body>
+<footer>
+  <p>© 2020 - Powered by</p><img src="./assets/florence_logo.svg">
+</footer>

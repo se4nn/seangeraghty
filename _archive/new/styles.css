@@ -1,0 +1,445 @@
+@font-face {
+  font-family: Cera Pro;
+  font-weight: 300;
+  font-display: swap;
+  src: url(./fonts/Cera_Pro_Light.otf);
+}
+
+@font-face {
+  font-family: Cera Pro;
+  font-weight: 500;
+  font-display: swap;
+  src: url(./fonts/Cera_Pro_Medium.otf);
+}
+
+* {
+  font-family: 'Cera Pro', sans-serif;
+  color: #051827;
+}
+
+body {
+  margin: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 72px;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 1.5;
+}
+
+h6 {
+  opacity: 0.5;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+h6 ~ h1 {
+  margin-top: 30px;
+}
+
+h1 ~ p {
+  margin-top: 30px;
+}
+
+p ~ button {
+  margin-top: 30px;
+}
+
+p {
+  font-weight: 300;
+  line-height: 1.5;
+  font-size: 24px;
+  max-width: 700px;
+}
+
+nav {
+  margin: 100px auto 0;
+  max-width: 1300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a, footer a{
+  font-size: 16px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+nav .links, footer .links {
+  display: flex;
+}
+
+nav .links a, footer .links a{
+  margin-left: 50px;
+}
+
+section {
+  max-width: 1300px;
+  display: flex;
+  margin: 0 auto;
+  padding: 100px 20px;
+}
+
+section .hero-link {
+  display: flex;
+  text-decoration: none;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.hero {
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.hero.centered {
+  align-items: center;
+  justify-content: center;
+}
+
+.hero.centered h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.hero .description {
+  margin-top: 200px;
+  max-width: 600px;
+}
+
+.hero.centered .description {
+  margin-top: 100px;
+}
+
+.hero .image.home {
+  width: 950px;
+  height: 800px;
+  position: relative;
+  margin-right: -200px;
+}
+
+.hero .image.photography {
+  width: 750px;
+  height: 550px;
+  position: relative;
+  margin-right: 0;
+}
+
+.hero .image .phone_1 {
+  position: absolute;
+  width: 616px;
+  height: 612px;
+  z-index: 5;
+  top: 100px;
+  left: 50px;
+  animation: float 4s ease-in-out infinite;
+}
+
+.hero .image .phone_2 {
+  position: absolute;
+  width: 750px;
+  height: 434px;
+  z-index: 3;
+  top: 225px;
+  left: 0px;
+  animation: move 4s ease-in-out infinite;
+}
+
+.hero .image .shadow {
+  position: absolute;
+  width: 655px;
+  height: 335px;
+  z-index: 4;
+  bottom: 0;
+  left: 94px;
+  mix-blend-mode: multiply;
+  animation: float-shadow 4s ease-in-out infinite;
+}
+
+.hero .image .blob {
+  position: absolute;
+  left: 150px;
+  top: 0;
+}
+
+.intro p {
+  text-align: center;
+  font-size: 24px;
+  margin: 0 auto;
+}
+
+.project a {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.project img, .project .project-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.project .project-hover {
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+
+.project .project-hover:hover {
+  opacity: 0.9;
+  transition: all 0.3s ease-in-out;
+}
+
+.project a:hover {
+  box-shadow: 0px 12px 12px -8px #353f522b;
+  transform: translatey(-6px);
+  transition: all 0.3s ease-in-out;
+}
+
+.project.landscape a, .project.landscape img, .project.landscape .project-hover {
+  width: 900px;
+  height: 600px;
+}
+
+.left {
+  justify-content: flex-start;
+}
+
+.right {
+  justify-content: flex-end;
+}
+
+.project.dual {
+  justify-content: space-around;
+}
+
+.project.dual a, .project.dual img, .project.dual .project-hover {
+  width: 400px;
+  height: 600px;
+}
+
+.project.dual.one a:first-child {
+  margin-top: 200px;
+}
+
+.project.dual.two a:nth-child(2) {
+  margin-top: 200px;
+}
+
+.instagram {
+  background: #001731;
+  justify-content: center;
+  max-width: 100%;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.instagram .logo {
+  font-size: 16px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.instagram .feed {
+  display: flex;
+  max-width: none;
+  margin-left: calc((50% - 825px));
+}
+
+.instagram .feed img {
+  width: 450px;
+  height: 450px;
+  margin: 0 50px;
+}
+
+.featured_image {
+  position: absolute;
+  top: 0;
+  left: 70px;
+  width: 750px;
+  height: 500px;
+  z-index: 5;
+}
+
+.featured_image_background {
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  background: #F1EAE5;
+  width: 750px;
+  height: 500px;
+}
+
+footer {
+  max-width: 100%;
+  background: #000E1F;
+  padding: 50px 20px;
+}
+
+footer .content{
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer a {
+  color: #fff;
+}
+
+/* Page */
+
+.lazy {
+  background: #F1EAE5;
+}
+
+section.work {
+  justify-content: center;
+}
+
+.work .wide-small {
+  width: 1040px;
+  height: 693px;
+}
+
+.work .wide {
+  width: 1440px;
+}
+
+.work .wide.portrait {
+  height: 1950px;
+}
+
+.work .wide.landscape {
+  height: 866.6px;
+}
+
+.work.dual {
+  justify-content: space-around;
+  max-width: 1300px;
+}
+
+.work.dual img {
+  width: 400px;
+  height: 600px;
+}
+
+.button.view {
+  border: 1px solid #051827;
+  border-radius: 4px;
+  font-size: 24px;
+  font-weight: 300;
+  text-decoration: none;
+  color: #051827;
+  background: #fff;
+  padding: 20px 40px;
+}
+
+/*Animations*/
+
+@keyframes move {
+	0% {
+		transform: translate(0px);
+	}
+	50% {
+		transform: translate(10px, -5px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+@keyframes float-shadow {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-10px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+/*Coloured Backgrounds*/
+
+.project .nested-brand {
+  background: #E4E9EC;
+}
+
+.project .fansvoice {
+  background: #086A25;
+}
+
+.project .fansvoice h2, .project .posters h2, .project .hoxton h2, .project .night h2, .project .nature h2{
+  color: #fff;
+}
+
+.project .burberry {
+  background: #F1EAE5;
+}
+
+.project .posters {
+  background: #8E3738;
+}
+
+.project .hoxton {
+  background: #77443C;
+}
+
+.project .illustrations {
+  background: #F4F9FF
+}
+
+.project .night {
+  background: #010101;
+}
+
+.project .nature {
+  background: #AA7D3D;
+}
+
+.project .street {
+  background: #F0F1F6;
+}
+
+.project .misc {
+  background: #F0F0F9
+}
+
+.project .art {
+  background: #E4E4E6
+}

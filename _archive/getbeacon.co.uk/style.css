@@ -1,0 +1,255 @@
+body {
+	margin: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+@-ms-viewport{
+  width: device-width;
+}
+
+h1, h2, h3{
+	font-family: 'Montserrat';
+}
+
+h1 {
+	font-size: 140px;
+	line-height: 0;
+	font-weight: 700;
+	margin-left: -9px;
+}
+
+a {
+	text-decoration: none;
+}
+
+h2 {
+	font-size: 50px;
+	color: #9342ad;
+	font-weight: 700;
+}
+
+h3 {
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 1;
+	margin-top: -25px;
+}
+
+p, a, label, input {
+	font-family: 'Montserrat';
+	font-size: 14pt;
+	font-weight: 400;
+	margin-top: -25px;
+}
+
+.section-1{
+	background: url('./assets/clock1.png') #fff no-repeat 80% 100%;
+	position: relative;
+	height: 100vh;
+	width: 100%;
+}
+
+h3 {
+	border-bottom: #9342ad 5px solid;
+	padding-bottom: 10px;
+}
+
+.purple{
+	color: #9342ad;
+}
+
+.white {
+	color: #fff;
+}
+
+.text {
+	padding-bottom: 75px;
+	position: absolute;
+	padding-left: 10%;
+	bottom: 0;
+	max-width: 710px;
+}
+
+.section-2{
+	background: url('./assets/clock2.png') #9342ad no-repeat 80% 100%;
+	position: relative;
+	display: block;
+	height: 100vh;
+	width: 100%;
+}
+
+.section-3{
+	background: url('./assets/clock1.png') #fff no-repeat 80% 100%;
+	position: relative;
+	height: 100vh;
+	width: 100%;
+}
+
+.section-3 h1 {
+	padding-left: 12px;
+}
+
+.section-4{
+	background: url('./assets/clock3.png') #9342ad no-repeat 80% 100%;
+	position: relative;
+	display: block;
+	height: 100vh;
+	width: 100%;
+}
+
+.section-5{
+	background: #fff;
+	position: relative;
+	height: 100vh;
+	width: 100%;
+}
+
+input {
+	-webkit-appearance: none;
+	padding: 10px;
+	color: #9342ad;
+	font-weight: 700;
+	background-color: #e9d9ef;
+	border: none;
+	display: inline-block;
+}
+
+.button {
+	background-color: #9342ad;
+	color: #fff;
+	display: inline-block;
+	border: none;
+	width: 150px;
+	text-align: left;
+}
+
+.form {
+	padding-bottom: 40vh;
+	position: absolute;
+	padding-left: 10%;
+	bottom: 0;
+	max-width: 960px;
+	text-transform: uppercase;
+}
+
+.fname {
+	width: 270px;
+	margin-right: 10px;
+}
+
+.email {
+	margin-right: 10px;
+	width: 470px;
+}
+
+.footer {
+	padding-left: 10%;
+	position: absolute;
+	bottom: 0;
+}
+
+#mc_embed_signup div.mce_inline_error {
+	font-family: 'Montserrat';
+	font-size: 14pt;
+	font-weight: 400;
+	margin: 10px 1px 0px 1px !important;
+	padding: 5px 10px;
+	background-color: red !important;
+	z-index: 1;
+	color: #fff;
+}
+
+#mc_embed_signup .response {
+	font-family: 'Montserrat';
+	font-size: 14pt;
+	font-weight: 400;
+	padding: 20px 0px 40px 0px;
+}
+
+
+@media screen and (max-width: 1100px){
+	h1 {
+		font-size: 40px;
+		margin-left: -2px;
+		line-height: 1;
+	}
+
+	h2 {
+		font-size: 30px;
+	}
+
+	h3 {
+		font-size: 20px;
+	}
+
+	.text {
+		padding-left: 5%;
+		width: 90%;
+		padding-right: 5%;
+		padding-bottom: 10%;
+	}
+
+	.section-1 {
+		background: url('./assets/clock1.png') #fff no-repeat 50% 40%;
+		background-size: 80%;
+	}
+
+	.section-1 .text {
+		padding-bottom: 20%;
+	}
+
+	.section-2{
+		background: url('./assets/clock2.png') #9342ad no-repeat 50% 20%;
+		background-size: 80%;
+	}
+
+	.section-3{
+		background: url('./assets/clock1.png') #fff no-repeat 50% 20%;
+		background-size: 80%;
+	}
+
+	.section-4{
+		background: url('./assets/clock3.png') #9342ad no-repeat 50% 20%;
+		background-size: 80%;
+	}
+
+	p, a, label, input {	
+		font-size: 11pt;
+	}
+
+	.section-3 h1 {
+		padding-left: 3px;
+	}
+
+	input {
+    border-radius: 0;
+    margin-top: 5px;
+	}
+
+	.button {
+		margin-top: 10px;
+	}
+
+	.form {
+		padding-left: 5%;
+		width: 90%;
+		padding-bottom: 30vh;
+	}
+
+	.fname {
+		width: 92.5%;
+		margin-bottom: 10px;
+	}
+
+	.footer {
+		padding-left: 5%;
+	}
+
+	.email {
+		width: 92.5%;
+	}
+
+
+}

@@ -1,0 +1,293 @@
+@font-face {
+  font-family: Euclid Circular B;
+  font-weight: 300;
+  src: url('https://seangeraghty.co.uk/nested/flyer/fonts/EuclidCircularB-Light-WebS.woff2');
+}
+
+@font-face {
+  font-family: Euclid Circular B;
+  font-weight: 500;
+  src: url('https://seangeraghty.co.uk/nested/flyer/fonts/EuclidCircularB-Medium-WebS.woff2');
+}
+
+* {
+  font-family: 'Euclid Circular B', sans-serif;
+  color: #353F52;
+}
+
+body {
+  margin: 0;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 24px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+}
+
+.file-picker {
+  max-width: 595px;
+  margin: 100px auto 0;
+  text-align: center;
+}
+
+.file-picker h1 {
+  margin-bottom: 25px;
+}
+
+.file-picker div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.file-picker em p {
+  opacity: 0.5;
+  margin-top: 10px;
+}
+
+.file-picker .inputfile {
+  width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+label {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  letter-spacing: 2px;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.sold {
+  background: url("./img/front-sale.png");
+  height: 102px;
+  width: 176px;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.sold h2 {
+  text-align: right;
+  margin: 25px 25px 0 0;
+}
+
+#image1 {
+  width: 370px !important;
+  height: 500px !important;
+  background: #C1E9DF;
+  background-size: cover !important;
+  background-position: center;
+  cursor: pointer;
+}
+
+h2, input.address{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+h2 {
+  text-align: center;
+}
+
+p {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+}
+
+input.address {
+  padding: 0;
+  background: none;
+  border: none;
+  outline: none;
+  width: 300px;
+}
+
+.address-price {
+  margin-top: 25px;
+}
+
+.front, .back {
+  display: flex;
+  flex-direction: column;
+  width: 370px;
+  height: 545px;
+  max-width: 420px;
+  max-height: 595px;
+  padding: 25px;
+  box-shadow: 0 0 10px #353f5220;
+  margin: 50px auto;
+  -webkit-print-color-adjust: exact;
+  position: relative;
+  overflow: hidden;
+}
+
+.front {
+  background-image: url("./img/front-background.png");
+  background-size: cover; 
+}
+
+.back {
+  background-image: url("./img/back-background.png");
+  background-size: cover;
+  background-position: right;
+}
+
+.back h2 {
+  margin-bottom: 10px;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 3px;
+}
+
+.back em {
+  font-weight: 500;
+  font-style: normal;
+}
+
+.address-price h2 {
+  margin-bottom: 4px;
+}
+
+.logo {
+  width: 60px;
+  height: 16px;
+}
+
+.front .logo {
+  position: absolute;
+  right: 25px;
+  bottom: 27px;
+}
+
+.back .logo{
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}
+
+.quote {
+  width: 350px;
+  padding: 10px 20px;
+  background: #F7FBFF;
+  border-radius: 5px;
+  margin: 25px -10px;
+}
+
+.quote p:last-child {
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.tp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.tp img {
+  height: 12px;
+  width: 136px;
+  margin-right: 10px;
+}
+
+.signup {
+  background: #F3FBF9;
+  margin: 0 -25px;
+  width: 370px;
+  padding: 25px;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+}
+
+.step {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.step img {
+  margin-right: 10px;
+}
+
+.step p {
+  text-align: left;
+}
+
+.contact {
+  margin: 10px 0 0 !important;
+  font-weight: 300;
+}
+
+.print {
+  background: #FFCEB6;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 2px;
+  line-height: 16px;
+  text-transform: uppercase;
+  margin: 50px auto 100px;
+  outline: none;
+}
+
+.backcontent {
+  position: absolute;
+  bottom: 0;
+  max-width: 370px;
+}
+
+@media print {
+
+  body {
+    margin: 0;
+    padding: 0;
+    display: inline;
+  }
+
+  .file-picker, .print {
+    display: none;
+  }
+
+  @page {
+    size: A5;
+    margin: 0mm;
+  }
+
+  .front, .back {
+    margin: 0;
+    box-shadow: none;
+    zoom: calc(96/72.1);
+  }
+
+}

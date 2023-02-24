@@ -1,0 +1,55 @@
+.first {
+	margin-top: -230px;
+}
+
+.text {
+	padding-top: 150px;
+	padding-bottom: 150px;
+}
+
+.image-1 {
+	width: 100%;
+	background: url('../assets/descape1.jpg');
+	background-size: cover;
+	background-position: top center;
+	min-height: 100vh;
+}
+
+.image-2 {
+	width: 100%;
+	background: url('../assets/descape2.jpg');
+	background-size: cover;
+	background-position: top center;
+	min-height: 100vh;
+}
+
+.image-3 {
+	width: 100%;
+	background: url('../assets/descape3.jpg');
+	background-size: cover;
+	background-position: top center;
+	min-height: 100vh;
+}
+
+.image-4 {
+	width: 100%;
+	background: url('../assets/descape4.jpg');
+	background-size: cover;
+	background-position: top center;
+	min-height: 100vh;
+}
+
+.next {
+	margin-top: 150px;
+	margin-bottom: 150px;
+	width: 100%;
+	background: #ededed url('../assets/2.png');
+	background-repeat: no-repeat;
+	background-position: right center;
+	min-height: 200px;
+}
+
+.next h2 {
+	padding-top: 50px;
+	float: left;
+}

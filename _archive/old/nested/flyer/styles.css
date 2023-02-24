@@ -1,0 +1,324 @@
+@font-face {
+  font-family: Euclid Circular B;
+  font-weight: 300;
+  src: url('https://seangeraghty.co.uk/nested/flyer/fonts/EuclidCircularB-Light-WebS.woff2');
+}
+
+@font-face {
+  font-family: Euclid Circular B;
+  font-weight: 500;
+  src: url('https://seangeraghty.co.uk/nested/flyer/fonts/EuclidCircularB-Medium-WebS.woff2');
+}
+
+* {
+  font-family: 'Euclid Circular B', sans-serif;
+  color: #353F52;
+}
+
+body {
+  margin: 0;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: calc(32px * 400/72);
+  line-height: calc(24px * 400/72);
+  letter-spacing: calc(6px * 400/72);
+  text-transform: uppercase;
+}
+
+.file-picker {
+  max-width: calc(595px * 400/72);
+  margin: 555px auto 0;
+  text-align: center;
+}
+
+.file-picker h1 {
+  margin-bottom: calc(25px * 400/72);
+}
+
+.file-picker div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.file-picker em p {
+  opacity: 0.5;
+  margin-top: 55px;
+}
+
+.file-picker .inputfile {
+  width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+label {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: calc(12px * 400/72);
+  letter-spacing: calc(2px * 400/72);
+  line-height: calc(16px * 400/72);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.label1 {
+  background: #FFCEB6;
+}
+
+.label2 {
+  background: #FFD28C;
+}
+
+.label3 {
+  background: #C1E9DF;
+}
+
+.label4 {
+  background: #D6E9FF;
+}
+
+#image1 {
+  width: calc(380px * 400/72) !important;
+  height: calc(305px * 400/72) !important;
+  margin-right: calc(25px * 400/72);
+  background: #FFCEB6;
+  background-size: cover !important;
+  background-position: center;
+}
+
+#image2, #image3 {
+  width: calc(140px * 400/72) !important;
+  height: calc(140px * 400/72) !important;
+  background-position: center;
+  background-size: cover !important;
+}
+
+#image2 {
+  margin-bottom: calc(25px * 400/72);
+  background: #FFD28C;
+}
+
+#image3 {
+  background: #C1E9DF;
+}
+
+#image4 {
+  background-size: cover !important;
+  background-position: center;
+  background: #D6E9FF;
+}
+
+h2, input.address{
+  font-weight: 500;
+  font-size: calc(16px * 400/72);
+  line-height: calc(20px * 400/72);
+  letter-spacing: calc(4px * 400/72);
+  text-transform: uppercase;
+}
+
+p, input.para, .key-features {
+  font-weight: 300;
+  font-size: calc(12px * 400/72);
+  letter-spacing: calc(2px * 400/72);
+  line-height: calc(16px * 400/72);
+}
+
+.key-features {
+  letter-spacing: initial;
+}
+
+h6 {
+  font-weight: 300;
+  font-size: calc(6px * 400/72);
+  line-height: calc(10px * 400/72);
+}
+
+input.address, input.para, .key-features {
+  padding: 0;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+input.address {
+  width: calc(380px * 400/72);
+}
+
+.front, .back {
+  display: flex;
+  flex-direction: column;
+  width: calc(545px * 400/72);
+  height: calc(370px * 400/72);
+  max-width: calc(595px * 400/72);
+  max-height: calc(420px * 400/72);
+  padding: calc(25px * 400/72);
+  box-shadow: 0 0 55px #353f5220;
+  margin: 275px auto;
+  -webkit-print-color-adjust: exact;
+}
+
+.front .images, .address-price, .baths-beds, .row {
+  display: flex;
+}
+
+.front .images {
+  min-height: calc(305px * 400/72);
+}
+
+.front .images div {
+  display: flex;
+  flex-direction: column;
+}
+
+.address-price {
+  flex-direction: column;
+}
+
+.details {
+  margin: 137.5px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.address-price h2 {
+  margin-bottom: calc(4px * 400/72);
+}
+
+.address-price div {
+  display: flex;
+  flex-direction: row;
+}
+
+.baths-beds {
+  max-height: calc(16px * 400/72);
+}
+
+.baths-beds .row {
+  margin-left: calc(20px * 400/72);
+}
+
+.baths-beds .row img {
+  height: calc(16px * 400/72);
+  width: calc(16px * 400/72);
+  margin-right: calc(5px * 400/72);
+}
+
+.baths-beds input{
+  width: calc(10px * 400/72);
+  text-align: right;
+}
+
+.back {
+  flex-direction: row;
+}
+
+.left, .right {
+  height: calc(370px * 400/72);
+}
+
+.back .left {
+  margin-right: calc(25px * 400/72);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.back .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+#image4 {
+  width: calc(280px * 400/72) !important;
+  height: calc(280px * 400/72) !important;
+  margin-bottom: calc(25px * 400/72);
+}
+
+.key-features {
+  resize: none;
+  margin-bottom: calc(25px * 400/72);
+  line-height: calc(25px * 400/72);
+}
+
+.back h2 {
+  margin-bottom: calc(5px * 400/72);
+}
+
+.contact-details .row {
+  margin: 27.5px 0;
+}
+
+.contact-details .row input {
+  margin-left: 55px;
+  width: calc(220px * 400/72);
+}
+
+.contact-details .row img {
+  height: calc(16px * 400/72);
+  width: calc(16px * 400/72);
+}
+
+.logo {
+  width: calc(60px * 400/72);
+  height: calc(16px * 400/72);
+  margin-bottom: calc(25px * 400/72);
+}
+
+.print {
+  background: #FFCEB6;
+  border: none;
+  cursor: pointer;
+  padding: 55px 110px;
+  border-radius: 22px;
+  font-weight: 500;
+  font-size: calc(12px * 400/72);
+  letter-spacing: calc(2px * 400/72);
+  line-height: calc(16px * 400/72);
+  text-transform: uppercase;
+  margin: 225px auto 550px;
+  outline: none;
+}
+
+@media print {
+
+  body {
+    margin: 0;
+    display: inline;
+  }
+
+  .file-picker, .print {
+    display: none;
+  }
+
+  @page {
+    size: 875mm 616.66mm;
+    margin: 0mm;
+  }
+
+  .front, .back {
+    margin: 0;
+    box-shadow: none;
+    zoom: calc(400 / (72.1 * 5.5));
+  }
+
+  .page:last-child {
+    page-break-after: avoid;
+  }
+
+}

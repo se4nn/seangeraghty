@@ -54,10 +54,6 @@ h1 a {
   text-decoration: none;
 }
 
-body.dark h1 a {
-  color: #051827;
-}
-
 h2 {
   font-size: clamp(32px, 8vw, 8vw);
 }
@@ -93,15 +89,15 @@ h1 .link{
 }
 
 h1 .paint {
-  background: hsl(176 100% 63%);
+  background: hsla(176 100% 63% / 10%);
 }
 
 h1 .cook {
-  background: hsl(304 100% 70%)
+  background: hsla(304 100% 70% / 10%);
 }
 
 h1 .design {
-  background: hsl(64 100% 50%);
+  background: hsla(64 100% 50% / 10%);
 }
 
 nav .links {
@@ -165,10 +161,20 @@ nav .links a.design {
 
 /* Hover States */
 
+h1 .link:hover {
+  color: #051827;
+}
+
 h1 .paint:hover {
-  background: url('./img/art.jpg');
-  background-size: cover;
-  background-position: center;
+  background: hsla(176 100% 63% / 100%);
+}
+
+h1 .cook:hover {
+  background: hsla(304 100% 70% / 100%);
+}
+
+h1 .design:hover {
+  background: hsla(64 100% 50% / 100%);
 }
 
 nav .links a:hover, nav a.active {
@@ -179,14 +185,17 @@ nav .links a:hover, nav a.active {
 
 nav .links .paint:hover {
   background: hsl(176 100% 63%);
+  color: #051827;
 }
 
 nav .links .cook:hover {
   background: hsl(304 100% 70%);
+  color: #051827;
 }
 
 nav .links .design:hover {
   background: hsl(64 100% 50%);
+  color: #051827;
 }
 
 

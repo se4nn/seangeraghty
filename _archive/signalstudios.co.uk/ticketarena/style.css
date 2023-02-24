@@ -1,0 +1,59 @@
+body {
+	margin: 0px;
+}
+
+.first {
+	margin-top: -230px;
+}
+
+.text {
+	padding-top: 150px;
+	padding-bottom: 150px;
+}
+
+.image-1 {
+	width: 100%;
+	background: url('../assets/ticketarena1.jpg');
+	background-size: cover;
+	background-position: top center;
+	min-height: 100vh;
+}
+
+.image-2 {
+	width: 100%;
+	background: url('../assets/ticketarena2.jpg');
+	background-size: cover;
+	background-position: top center;
+	min-height: 100vh;
+}
+
+.image-3 {
+	width: 100%;
+	background: url('../assets/ticketarena3.jpg');
+	background-size: cover;
+	background-position: top center;
+	min-height: 100vh;
+}
+
+.image-4 {
+	width: 100%;
+	background: url('../assets/ticketarena4.jpg');
+	background-size: cover;
+	background-position: top center;
+	min-height: 100vh;
+}
+
+.next {
+	margin-top: 150px;
+	margin-bottom: 150px;
+	width: 100%;
+	background: #f3ede6 url('../assets/1.png');
+	background-repeat: no-repeat;
+	background-position: right center;
+	min-height: 200px;
+}
+
+.next h2 {
+	padding-top: 50px;
+	float: left;
+}
