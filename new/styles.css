@@ -13,26 +13,24 @@ body {
   color: var(--light);
   background-color: var(--navy);
   transition: background-color 1s ease;
-  overflow-y: hidden;
   font-family: 'Founders Grotesk', sans-serif;
   height: 100vh;
   margin: 48px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  gap: 96px;
 }
 
 .intro {
   width: 100%;
-  height: 240px;
-  position: fixed;
-  top: 120px;
 }
 
 .panels {
   display: flex;
-  gap: 48px;
+  gap: 96px;
   height: calc(100vh - 240px);
+  max-width: 100vw;
 }
 
 .panel {
