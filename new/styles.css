@@ -37,6 +37,7 @@ body {
   flex-direction: column;
   justify-content: flex-end;
   gap: 24px;
+  width: 33vw;
 }
 
 .panel:last-child {
