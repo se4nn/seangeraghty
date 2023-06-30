@@ -1,0 +1,108 @@
+:root {
+  --dark: #2A2827;
+  --light: #F6F4F3;
+  --navy: #2D3D50;
+  --pink: #FBDCE9;
+  --orange: #FF5422;
+  --yellow: #FFF12F;
+  --peach: #FCDDC0;
+}
+
+/* Setting fade transition and default settings */
+body {
+  color: var(--light);
+  background-color: var(--navy);
+  transition: background-color 1s ease;
+  overflow-y: hidden;
+  font-family: 'Founders Grotesk', sans-serif;
+  height: 100vh;
+  margin: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.intro {
+  width: 100%;
+  height: 240px;
+  position: fixed;
+  top: 120px;
+}
+
+.panels {
+  display: flex;
+  gap: 48px;
+  height: calc(100vh - 240px);
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 24px;
+}
+
+.panel:last-child {
+  padding-right: calc(100vw - 48px);
+}
+
+.canvas {
+  height: calc(100% - 80px);
+  box-shadow: 0px 8px 12px -2px rgba(42, 40, 39, 0.48);
+}
+
+.info {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+}
+
+.color-navy {
+  color: var(--light);
+  background-color: var(--navy);
+}
+.color-pink {
+  color: var(--dark);
+  background-color: var(--pink);
+}
+.color-orange {
+  color: var(--light);
+  background-color: var(--orange);
+}
+.color-yellow {
+  color: var(--dark);
+  background-color: var(--yellow);
+}
+.color-peach {
+  color: var(--dark);
+  background-color: var(--peach);
+}
+.color-dark {
+  color: var(--dark);
+  background-color: var(--light);
+}
+.color-light {
+  color: var(--light);
+  background-color: var(--dark);
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 47px;
+  line-height: 48px;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 23px;
+  line-height: 32px;
+}
+
+p.date {
+  font-family: 'Founders Grotesk';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
