@@ -13,7 +13,7 @@ body {
   background-color: var(--light);
   transition: background-color 1s ease;
   font-family: 'PP Mori', sans-serif;
-  margin: 4vw;
+  margin: clamp(16px, 4vw, 96px);
   display: flex;
   flex-direction: column;
   gap: 8vw;
