@@ -6,7 +6,7 @@ function calcDynamicHeight(ref) {
   const vw = window.innerWidth;
   const vh = window.innerHeight;
   const objectWidth = ref.scrollWidth;
-  return objectWidth - vw + vh;
+  return objectWidth - vw + vh - 96;
 }
 
 window.addEventListener('scroll', () => {
