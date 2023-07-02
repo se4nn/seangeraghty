@@ -51,6 +51,7 @@
   --orange: #FF5422;
   --yellow: #FFF12F;
   --peach: #FCDDC0;
+  --dark-green: #3A490D;
 }
 
 body {
@@ -138,6 +139,8 @@ nav {
   justify-content: space-between;
 }
 
+/* COLOUR CHANGES */
+
 .color-navy {
   color: var(--light);
   background-color: var(--navy);
@@ -158,6 +161,10 @@ nav {
   color: var(--dark);
   background-color: var(--peach);
 }
+.color-dark-green {
+  color: var(--light);
+  background-color: var(--dark-green);
+}
 .color-dark {
   color: var(--dark);
   background-color: var(--light);
@@ -166,6 +173,12 @@ nav {
   color: var(--light);
   background-color: var(--dark);
 }
+
+.color-navy a, .color-orange a, .color-dark a, .color-dark-green a {
+  color: var(--light);
+  border-color: var(--light);
+}
+
 
 /* CANVAS SCROLL */
 
