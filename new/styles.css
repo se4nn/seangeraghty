@@ -246,6 +246,7 @@ nav {
 
   body {
     gap: 12vw;
+    padding-bottom: 6vw;
   }
 
   .sticky {
@@ -259,6 +260,7 @@ nav {
 
   a {
     border-bottom-width: 1px;
+    font-weight: 400;
   }
 
 }
