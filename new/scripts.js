@@ -1,12 +1,15 @@
+// HORIZONTAL SCROLL
+
 const spaceHolder = document.querySelector('.space-holder');
+const sticky = document.querySelector('.sticky');
 const horizontal = document.querySelector('.horizontal');
 spaceHolder.style.height = `${calcDynamicHeight(horizontal)}px`;
 
 function calcDynamicHeight(ref) {
   const vw = window.innerWidth;
-  const vh = window.innerHeight;
+  const vh = sticky.offsetHeight;
   const objectWidth = ref.scrollWidth;
-  return objectWidth - vw + vh - (vw * 0.04);
+  return objectWidth - vw + vh + (0.1 * vw);
 }
 
 window.addEventListener('scroll', () => {
@@ -18,32 +21,32 @@ window.addEventListener('resize', () => {
   spaceHolder.style.height = `${calcDynamicHeight(horizontal)}px`;
 });
 
-$(window).scroll(function() {
+// COLOUR CHANGE
+
+$(document).ready(function() {
+  var $body = $('body');
+  var $firstPanel = $('.panel').first();
+  var firstPanelColor = $firstPanel.data('color');
   
-  // selectors
-  var $window = $(window),
-      $body = $('body'),
-      $panel = $('.panel');
+  $body.addClass('color-' + firstPanelColor);
   
-  // Change 33% earlier than scroll position so colour is there when you arrive.
-  var scroll = $window.scrollTop() + ($window.height() / 3);
- 
-  $panel.each(function () {
-    var $this = $(this);
-    
-    // if position is within range of this panel.
-    // So position of (position of top of div <= scroll position) && (position of bottom of div > scroll position).
-    // Remember we set the scroll to 33% earlier in scroll var.
-    if ($this.position().top <= scroll && $this.position().top + $this.height() > scroll) {
-          
-      // Remove all classes on body with color-
-      $body.removeClass(function (index, css) {
-        return (css.match (/(^|\s)color-\S+/g) || []).join(' ');
-      });
-       
-      // Add class of currently active div
-      $body.addClass('color-' + $(this).data('color'));
-    }
-  });    
+  var observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      var $panel = $(entry.target);
+      
+      if (entry.isIntersecting && entry.intersectionRatio >= 1) {
+        var color = $panel.data('color');
+        
+        $body.removeClass(function (index, css) {
+          return (css.match(/(^|\s)color-\S+/g) || []).join(' ');
+        });
+        
+        $body.addClass('color-' + color);
+      }
+    });
+  }, { threshold: 1 });
   
-}).scroll();
+  $('.panel').each(function () {
+    observer.observe(this);
+  });
+});

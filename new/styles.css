@@ -59,7 +59,7 @@ body {
   background-color: var(--light);
   transition: background-color 1s ease;
   font-family: 'PP Mori', sans-serif;
-  margin: clamp(16px, 4vw, 96px);
+  margin: clamp(16px, 4vw, 4vw);
   display: flex;
   flex-direction: column;
   gap: 8vw;
@@ -115,8 +115,6 @@ a {
 }
 
 .logo {
-  letter-spacing: 0.04em;
-  font-weight: 600;
   border-bottom: none;
 }
 
@@ -224,9 +222,7 @@ nav {
   flex-direction: column;
   justify-content: flex-end;
   gap: 16px;
-  max-height: calc(80vw + 96px);
   height: 100%;
-  width: auto;
 }
 
 .canvas {
@@ -254,6 +250,7 @@ nav {
 
   .panel {
     width: 80vw;
+    height: auto;
   }
 
 }
