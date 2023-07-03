@@ -65,7 +65,8 @@ body {
   gap: 8vw;
   overflow-x: hidden;
   width: 92vw;
-  max-width: 96vw;
+  max-width: 92vw;
+  zoom: 1.0;
 }
 
 h1 {
