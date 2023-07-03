@@ -257,4 +257,8 @@ nav {
     height: auto;
   }
 
+  a {
+    border-bottom-width: 1px;
+  }
+
 }
