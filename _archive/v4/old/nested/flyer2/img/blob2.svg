@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="43" height="45" viewBox="0 0 43 45">
+  <defs>
+    <path id="blob2-b" d="M18.5294118,36.5441176 C27.7679986,36.5441176 35,26.7385868 35,17.5 C35,8.26141319 30.341528,0 21.1029412,0 C7.74670731,0 0,9.03347202 0,22.3897059 C0,31.6282927 9.29082496,36.5441176 18.5294118,36.5441176 Z"/>
+    <filter id="blob2-a" width="140%" height="138.3%" x="-20%" y="-13.7%" filterUnits="objectBoundingBox">
+      <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.207843137   0 0 0 0 0.247058824   0 0 0 0 0.321568627  0 0 0 0.1 0"/>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(4 2)">
+    <use fill="#000" filter="url(#blob2-a)" xlink:href="#blob2-b"/>
+    <use fill="#FFD28C" xlink:href="#blob2-b"/>
+    <path fill="#353F52" d="M20.802,20.704 L20.802,22 L15.162,22 L15.162,21.52 C15.162,19.648 16.71,18.832 17.958,17.908 C18.834,17.272 19.386,16.792 19.386,15.928 C19.386,15.172 18.87,14.632 18.03,14.632 C17.178,14.632 16.506,15.184 16.494,16.084 L15.162,16.084 C15.162,14.44 16.422,13.336 18.042,13.336 C19.47,13.336 20.718,14.2 20.718,15.892 C20.718,17.248 20.082,17.98 18.834,18.88 C18.066,19.456 17.118,19.936 16.902,20.704 L20.802,20.704 Z"/>
+  </g>
+</svg>

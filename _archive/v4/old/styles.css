@@ -1,0 +1,511 @@
+body {
+	background: #ededed;
+	margin: 60px;
+}
+
+h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 1.6rem;
+	text-transform: uppercase;
+}
+
+a {
+	color: #777;
+	text-decoration: none;
+}
+
+p {
+	font-family: 'Cutive Mono', sans-serif;
+	font-size: 1.2rem;
+}
+
+h3 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 1rem;
+	text-transform: uppercase;
+}
+
+h3:hover {
+	color: #000;
+	transition: none; -webkit-transition: none; -moz-transition: none; -ms-transition: none; -o-transition: none;
+}
+
+a h3{
+	padding-bottom: 5px;
+	border-bottom: 2px solid #777;
+}
+
+a h3:hover{
+	border-bottom: 2px solid #000;
+}
+
+#preload {display: none;}
+
+:hover {
+	transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+}
+
+/*Home CSS*/
+
+header {
+	position: fixed;
+	z-index: 1000;
+	width: calc(100% - 120px);
+	background-color: transparent;
+	height: 250px;
+	display: inline;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+header .right{
+	float: right;
+	margin-top: 100px;
+}
+
+header .right a{
+	display: inline;
+	float: left;
+	margin-right: 60px;
+}
+
+.logo {
+	background: url('./assets/logo.png');
+	background-size: cover;
+	height: 250px;
+	width: 250px;
+	line-height: 250px;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	display: inline-block;
+}
+
+.intro {
+	padding-top: 400px;
+	background: #ededed;
+	padding-bottom: 200px;
+}
+
+.intro p {
+	width: 600px;
+}
+
+.banner {
+	background: #fff url('./assets/fans-voice.png') no-repeat center;
+	background-size: 50vh;
+	filter: gray; /* IE6-9 */
+  	filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+	-webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+	height: 100vh;
+	/* HOVER OFF */
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.banner:hover {
+	background: #5ca65c url('./assets/fans-voice.png') no-repeat center;
+	background-size: 55vh;
+	filter: none;
+  	-webkit-filter: grayscale(0);
+}
+
+.full-width {
+	max-width: 100%;
+}
+
+.hoxton {
+	background: #fff url('./assets/hoxton.png') no-repeat center;
+	background-size: 100vh;
+	width: 70%;
+	height: 100vh;
+	background-color: #f7f7f7;
+	float: left;
+	display: inline;
+	/* HOVER OFF */
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.hoxton:hover{
+	background: #293f3a url('./assets/hoxton-hover.png') no-repeat center;
+	background-size: 110vh;
+}
+
+.social {
+	width: 20vh;
+	height: 40vh;
+	float: left;
+	display: inline;
+}
+
+.column-1 {
+	width: 30%;
+	height: 100vh;
+	float: left;
+	display: inline;
+}
+
+.column-2 {
+	width: 60vh;
+	max-height: 100vh;
+	float: left;
+	display: inline;
+}
+
+.writing {
+	height: 40vh;
+	background-color: #e2e2e2;
+	/* HOVER OFF */
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.writing:hover {
+	color: #000;
+	background-color: #00e56b; 
+}
+
+.writing .text{
+	margin: 0 auto;
+	text-align: center;
+	padding-top: calc(20vh - 31px);
+	max-width: 70%;
+}
+
+.burberry {
+	height: 60vh;
+	background: #fff url('./assets/burberry.png') no-repeat center;
+	background-size: 60vh;
+	/* HOVER OFF */
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.burberry:hover {
+	background: #131313 url('./assets/burberry-hover.png') no-repeat center;
+	background-size: 66vh;
+}
+
+.dribbble {
+	height: 20vh;
+	background: #f7f7f7 url('./assets/dribbble.jpg') no-repeat center;
+	background-size: 20vh;
+	/* HOVER OFF */
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.dribbble:hover {
+	background: #ea4c89 url('./assets/dribbble-hover.jpg') no-repeat center;
+	background-size: 22vh;
+}
+
+.twitter {
+	height: 20vh;
+	background: #f1f1f1 url('./assets/twitter.jpg') no-repeat center;
+	background-size: 20vh;
+	/* HOVER OFF */
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.twitter:hover {
+	background: #2daae1 url('./assets/twitter-hover.jpg') no-repeat center;
+	background-size: 22vh;
+}
+
+.UNDP {
+	width: 40vh;
+	height: 40vh;
+	margin-left: 20vh;
+	background: #e2e2e2 url('./assets/UNDP.png') no-repeat center;
+	background-size: 40vh;
+	/* HOVER OFF */
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.UNDP:hover {
+	background: #0c489e url('./assets/UNDP-hover.png') no-repeat center;
+	background-size: 44vh;
+}
+
+.alarm {
+	height: 60vh;
+	background: #f3f3f3 url('./assets/beacon.jpg') no-repeat center;
+	background-size: 60vh;
+	/* HOVER OFF */
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.alarm:hover {
+	background: #141414 url('./assets/beacon-hover.jpg') no-repeat center;
+	background-size: 66vh;
+}
+
+.fairy {
+	width: calc(100% - 60vh);
+	height: 100vh;
+	background: #f3f3f3 url('./assets/ticket.png') no-repeat center;
+	background-size: 100vh;
+	float: left;
+	display: inline;
+	/* HOVER OFF */
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.fairy:hover {
+	background: #f5a8a8 url('./assets/ticket-hover.png') no-repeat center;
+	background-size: 110vh;
+}
+
+
+.footer {
+	width: 100%;
+	background: #fff;
+	float: left;
+	display: inline;
+	margin-bottom: 60px;
+	padding-top: calc(15vh - 10px);
+	padding-bottom: calc(15vh - 10px);
+}
+
+.footer .left{
+	float: left;
+	margin-left: 60px;
+}
+
+.footer .left h3 {
+	display: inline;
+}
+
+.footer .right {
+	float: right;
+}
+
+.footer .right h3 {
+	margin-right: 60px;
+	display: inline;
+}
+
+header.smaller {
+	height: 150px;
+}
+
+header.smaller h3{
+	display: none;
+}
+
+header.smaller .logo{
+	height: 150px;
+	background: url('./assets/logo.png');
+	z-index: 1000;
+	background-size: cover;
+	width: 150px;
+	line-height: 150px;
+}
+
+/*Media Query Mobile*/
+
+@media only screen and (min-width: 320px) and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 1) {
+
+body {margin: 0px -70px 0px 0px;}
+a {color: black;}
+
+h2 {
+	font-size: 1.4rem;
+}
+
+@media screen and (min-width: 319px) and (max-width: 768px) {
+
+body {margin: 0px 0px 0px 0px;}
+
+header {
+	width: 100%;
+}
+
+header.smaller{
+	width: 100px;
+}
+
+.intro{
+	padding-top: 250px;
+}
+
+.intro p{
+	width: 80%;
+	margin-left: 30px;
+}
+
+.logo, header.smaller .logo {
+	position: fixed;
+	background: url('./assets/logo-small.png');
+	z-index: 1000;
+	background-size: cover;
+	height: 100px;
+	width: 100px;
+}
+
+header .right{
+	margin-top: 20px;
+}
+
+header .right a{
+	margin-right: 20px;
+}
+
+.banner, .banner:hover {
+	background: #5ca65c url('./assets/fans-voice.png') no-repeat center;
+	filter: none;
+	background-size: 50vh;
+  	-webkit-filter: grayscale(0);
+}
+
+.hoxton, .hoxton:hover{
+	width: 100%;
+	background: #293f3a url('./assets/hoxton-hover.png') no-repeat center;
+	background-size: 100vh;
+}
+
+.column-1 {
+	width: 100%;
+}
+
+.column-2 {
+	width: 100%;
+	display: block;
+}
+
+.burberry, .burberry:hover {
+	background: #131313 url('./assets/burberry-hover.png') no-repeat center;
+	background-size: 60vh;
+}
+
+.alarm, .alarm:hover{
+	background: #f5a8a8 url('./assets/beacon-hover.jpg') no-repeat center;
+	background-size: cover;
+}
+
+.fairy, .fairy:hover {
+	width: 100%;
+	display: block;
+	background: #f5a8a8 url('./assets/ticket-hover.png') no-repeat center;
+	background-size: 100vh;
+}
+
+.UNDP, .UNDP:hover {
+	width: initial;
+	background: #0c489e url('./assets/UNDP-hover.png') no-repeat center;
+	background-size: 50vh;
+}
+
+.dribbble, .dribbble:hover {
+	background: #ea4c89 url('./assets/dribbble-hover.jpg') no-repeat center;
+	background-size: 20vh;
+}
+
+.twitter, .twitter:hover {
+	background: #2daae1 url('./assets/twitter-hover.jpg') no-repeat center;
+	background-size: 20vh;
+}
+
+.footer {
+	margin-bottom: 0px;
+}
+
+.footer .left{
+	float: none;
+	margin-left: 0px !important;
+	text-align: center;
+}
+
+.footer .right {
+	margin-top: 20px; 
+	float: none;
+	text-align: center;
+}
+
+.footer .right h3{
+	margin-right: 20px !important;
+	margin-left: 20px;
+}
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+body {margin: 40px;}
+
+header{
+	height: 200px;
+}
+
+.logo{
+	background: url('./assets/logo.png');
+	background-size: cover;
+	height: 200px;
+	width: 200px;
+	line-height: 200px;
+}
+
+.column-2 {width: 40vh;}
+
+.social {height: 30vh;}
+
+.burberry {height: 40vh; background-size: 40vh}
+
+.twitter {height: 15vh; width: 15vh; background-size: 15vh;}
+
+.dribbble {height: 15vh; width: 15vh; background-size: 15vh;}
+
+.UNDP {height: 30vh; width: 25vh; background-size: 30vh; margin-left: 15vh;}
+
+.fairy {height: 70vh; width: calc(100% - 40vh); background-size: 70vh;}
+
+.footer .left {margin-left: 40px;}
+
+.footer .right h3{margin-right: 40px;}
+
+}
+

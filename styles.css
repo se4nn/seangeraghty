@@ -1,227 +1,266 @@
 @font-face {
-  font-family: Argent CF;
+  font-family: PP Mori;
   font-weight: 200;
   font-display: block;
-  src: url(./fonts/ArgentCF-Thin.otf);
+  src: url(./fonts/PPMori-Extralight.otf);
 }
 
 @font-face {
-  font-family: Argent CF;
+  font-family: PP Mori;
   font-weight: 200;
-  font-display: block;
   font-style: italic;
-  src: url(./fonts/ArgentCF-ThinItalic.otf);
+  font-display: block;
+  src: url(./fonts/PPMori-ExtralightItalic.otf);
 }
 
 @font-face {
-  font-family: Greycliff CF;
-  font-weight: 500;
+  font-family: PP Mori;
+  font-weight: 400;
   font-display: block;
-  src: url(./fonts/GreycliffCF-Medium.otf);
+  src: url(./fonts/PPMori-Regular.otf);
 }
 
-* {
-  transition: all 0.2s ease;
+@font-face {
+  font-family: PP Mori;
+  font-weight: 400;
+  font-style: italic;
+  font-display: block;
+  src: url(./fonts/PPMori-RegularItalic.otf);
+}
+
+@font-face {
+  font-family: PP Mori;
+  font-weight: 600;
+  font-display: block;
+  src: url(./fonts/PPMori-SemiBold.otf);
+}
+
+@font-face {
+  font-family: PP Mori;
+  font-weight: 600;
+  font-style: italic;
+  font-display: block;
+  src: url(./fonts/PPMori-SemiBoldItalic.otf);
+}
+
+:root {
+  --dark: #2A2827;
+  --light: #F6F4F3;
+  --navy: #2D3D50;
+  --pink: #FBDCE9;
+  --orange: #FF5422;
+  --yellow: #FFF12F;
+  --peach: #FCDDC0;
+  --dark-green: #3A490D;
 }
 
 body {
-  margin: 5vw;
-  max-width: 100%;
+  color: var(--dark);
+  background-color: var(--light);
+  transition: background-color 1s ease;
+  font-family: 'PP Mori', sans-serif;
+  margin: clamp(16px, 4vw, 4vw);
+  display: flex;
+  flex-direction: column;
+  gap: 8vw;
+  overflow-x: hidden;
+  width: 92vw;
+  max-width: 92vw;
+  zoom: 1.0;
 }
 
-body.dark {
-  background-color: #051827;
-}
-
-body.dark * {
-  color: #fff;
-}
-
-h1, h1 a, h2, .intro p {
-  font-family: Argent CF;
+h1 {
   font-weight: 200;
-  line-height: 125%;
-  letter-spacing: -0.02em;
+  font-size: 47px;
+  font-size: clamp(31px, 4vw, 53px);
+  line-height: 104%;
 }
 
-h1, h1 a {
-  font-size: clamp(48px, 13vw, 13vw);
-  color: #051827;
+h3 {
+  font-size: clamp(23px, 2vw, 41px);
+  line-height: 104%;
+  font-weight: 200;
 }
 
-h1 a {
-  font-style: italic;
-  text-decoration: none;
+p.title, p.about {
+  font-weight: 200;
 }
 
-h2 {
-  font-size: clamp(32px, 8vw, 8vw);
-}
-
-p, a {
-  font-family: Greycliff CF;
-  font-size: clamp(16px, 0.8vw, 40px);
-  line-height: 125%;
-  color: #051827;
-  text-decoration: none;
-}
-
-.intro p {
-  font-size: clamp(16px, 2.4vw, 40px);
+p.about {
+  max-width: 56ch;
+  font-size: clamp(19px, 1.8vw, 27px);
   line-height: 140%;
+}
+
+p.date, p.size {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.64;
+  font-size: clamp(12px, 1.2vw, 14px);
+  font-weight: 200;
+}
+
+p.date {
+  font-weight: 400;
+}
+
+a {
+  font-weight: 200;
+  font-size: clamp(19px, 2vw, 27px);
+  line-height: 32px;
+  color: var(--dark);
+  border-bottom: 1.5px solid var(--dark);
+  text-decoration: none;
+}
+
+.logo {
+  border-bottom: none;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-bottom: 4vw;
 }
 
-h1 {
-  margin: 0 1vw;
-}
-
-h1 .link{
-  padding: 0px 1.5vw 1vw;
-  margin: 0 -1vw;
-}
-
-h1 .paint {
-  background: hsla(176 100% 63% / 10%);
-}
-
-h1 .cook {
-  background: hsla(304 100% 70% / 10%);
-}
-
-h1 .design {
-  background: hsla(64 100% 50% / 10%);
-}
-
-nav .links {
+.links {
   display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
+  gap: 24px;
 }
 
-nav a {
-  font-weight: 500;
-  text-transform: uppercase;
+.intro h1 {
+  max-width: 28ch;
 }
 
-nav .links a {
-  padding: 4px 8px;
-  border-right: 8px solid;
+.info {
+  display: flex;
+  justify-content: space-between;
 }
 
-nav .links a.paint {
-  border-color: hsl(176 100% 63%);
+/* COLOUR CHANGES */
+
+.color-navy {
+  color: var(--light);
+  background-color: var(--navy);
+}
+.color-pink {
+  color: var(--dark);
+  background-color: var(--pink);
+}
+.color-orange {
+  color: var(--light);
+  background-color: var(--orange);
+}
+.color-yellow {
+  color: var(--dark);
+  background-color: var(--yellow);
+}
+.color-peach {
+  color: var(--dark);
+  background-color: var(--peach);
+}
+.color-dark-green {
+  color: var(--light);
+  background-color: var(--dark-green);
+}
+.color-dark {
+  color: var(--dark);
+  background-color: var(--light);
+}
+.color-light {
+  color: var(--light);
+  background-color: var(--dark);
 }
 
-nav a.paint.active{
-  background-color: hsl(176 100% 63%);
+.color-navy a, .color-orange a, .color-dark a, .color-dark-green a {
+  color: var(--light);
+  border-color: var(--light);
 }
 
-nav .links a.cook {
-  border-color: hsl(304 100% 70%);
+
+/* CANVAS SCROLL */
+
+.bumper {
+  text-align: center;
+  padding: 128px 16px;
+  background-color: #efefef;
 }
 
-nav .links a.design {
-  border-color: hsl(64 100% 50%);
-}
-
-.instagram {
-  width: 90vw;
-  overflow-x: scroll;
-  padding: 10vw 0 0;
-}
-
-.instagram-feed {
-  width: 200vw !important;
-}
-
-.intro {
-  margin-bottom: 4vw;
-}
-
-.painting {
+.container {
+  position: relative;
   width: 100%;
-  max-height: 100%;
-  height: auto;
 }
 
-.caption {
-  font-family: Argent CF;
-  font-size: clamp(24px, 4vw, 48px);
-  margin: 1.6vw 0 4vw;
-  font-weight: 200;
+.space-holder {
+  position: relative;
+  width: 100%;
 }
 
-/* Hover States */
-
-h1 .link:hover {
-  color: #051827;
+.sticky {
+  position: sticky;
+  top: 96px;
+  height: calc(100vh - 96px - 80px);
 }
 
-h1 .paint:hover {
-  background: hsla(176 100% 63% / 100%);
+.horizontal {
+  position: absolute;
+  height: 100%;
+  will-change: transform;
 }
 
-h1 .cook:hover {
-  background: hsla(304 100% 70% / 100%);
+.panels {
+  position: relative;
+  display: flex;
+  gap: 5vw;
+  flex-flow: row nowrap;
+  align-items: center;
+  height: 100%;
 }
 
-h1 .design:hover {
-  background: hsla(64 100% 50% / 100%);
+.panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 16px;
+  height: 100%;
+  width: 80vh;
 }
 
-nav .links a:hover, nav a.active {
-  border-width: 0;
-  padding: 4px 12px;
-  color: #051827;
+.canvas {
+  margin-bottom: 8px;
 }
 
-nav .links .paint:hover {
-  background: hsl(176 100% 63%);
-  color: #051827;
+.canvas.small {
+  scale: 0.5;
 }
 
-nav .links .cook:hover {
-  background: hsl(304 100% 70%);
-  color: #051827;
+.canvas img {
+  width: 100%;
+  box-shadow: 0px 8px 12px -2px rgba(42, 40, 39, 0.48);
 }
-
-nav .links .design:hover {
-  background: hsl(64 100% 50%);
-  color: #051827;
-}
-
-
 
 /* Media Queries */
 
 @media only screen and (max-width: 720px) {
 
-  nav .links {
-    display: none;
-  }
-
-}
-
-@media (prefers-color-scheme: dark) {
-
   body {
-    background-color: #051827;
-  }
-  
-  body * {
-    color: #fff;
+    gap: 12vw;
+    padding-bottom: 6vw;
   }
 
-  h1 a {
-    color: #051827;
+  .sticky {
+    height: calc(100vw);
+  }
+
+  .panel {
+    width: 80vw;
+    height: auto;
+  }
+
+  a {
+    border-bottom-width: 1px;
+    font-weight: 400;
   }
 
 }

@@ -1,0 +1,227 @@
+@font-face {
+  font-family: Argent CF;
+  font-weight: 200;
+  font-display: block;
+  src: url(./fonts/ArgentCF-Thin.otf);
+}
+
+@font-face {
+  font-family: Argent CF;
+  font-weight: 200;
+  font-display: block;
+  font-style: italic;
+  src: url(./fonts/ArgentCF-ThinItalic.otf);
+}
+
+@font-face {
+  font-family: Greycliff CF;
+  font-weight: 500;
+  font-display: block;
+  src: url(./fonts/GreycliffCF-Medium.otf);
+}
+
+* {
+  transition: all 0.2s ease;
+}
+
+body {
+  margin: 5vw;
+  max-width: 100%;
+}
+
+body.dark {
+  background-color: #051827;
+}
+
+body.dark * {
+  color: #fff;
+}
+
+h1, h1 a, h2, .intro p {
+  font-family: Argent CF;
+  font-weight: 200;
+  line-height: 125%;
+  letter-spacing: -0.02em;
+}
+
+h1, h1 a {
+  font-size: clamp(48px, 13vw, 13vw);
+  color: #051827;
+}
+
+h1 a {
+  font-style: italic;
+  text-decoration: none;
+}
+
+h2 {
+  font-size: clamp(32px, 8vw, 8vw);
+}
+
+p, a {
+  font-family: Greycliff CF;
+  font-size: clamp(16px, 0.8vw, 40px);
+  line-height: 125%;
+  color: #051827;
+  text-decoration: none;
+}
+
+.intro p {
+  font-size: clamp(16px, 2.4vw, 40px);
+  line-height: 140%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 4vw;
+}
+
+h1 {
+  margin: 0 1vw;
+}
+
+h1 .link{
+  padding: 0px 1.5vw 1vw;
+  margin: 0 -1vw;
+}
+
+h1 .paint {
+  background: hsla(176 100% 63% / 10%);
+}
+
+h1 .cook {
+  background: hsla(304 100% 70% / 10%);
+}
+
+h1 .design {
+  background: hsla(64 100% 50% / 10%);
+}
+
+nav .links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+nav a {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+nav .links a {
+  padding: 4px 8px;
+  border-right: 8px solid;
+}
+
+nav .links a.paint {
+  border-color: hsl(176 100% 63%);
+}
+
+nav a.paint.active{
+  background-color: hsl(176 100% 63%);
+}
+
+nav .links a.cook {
+  border-color: hsl(304 100% 70%);
+}
+
+nav .links a.design {
+  border-color: hsl(64 100% 50%);
+}
+
+.instagram {
+  width: 90vw;
+  overflow-x: scroll;
+  padding: 10vw 0 0;
+}
+
+.instagram-feed {
+  width: 200vw !important;
+}
+
+.intro {
+  margin-bottom: 4vw;
+}
+
+.painting {
+  width: 100%;
+  max-height: 100%;
+  height: auto;
+}
+
+.caption {
+  font-family: Argent CF;
+  font-size: clamp(24px, 4vw, 48px);
+  margin: 1.6vw 0 4vw;
+  font-weight: 200;
+}
+
+/* Hover States */
+
+h1 .link:hover {
+  color: #051827;
+}
+
+h1 .paint:hover {
+  background: hsla(176 100% 63% / 100%);
+}
+
+h1 .cook:hover {
+  background: hsla(304 100% 70% / 100%);
+}
+
+h1 .design:hover {
+  background: hsla(64 100% 50% / 100%);
+}
+
+nav .links a:hover, nav a.active {
+  border-width: 0;
+  padding: 4px 12px;
+  color: #051827;
+}
+
+nav .links .paint:hover {
+  background: hsl(176 100% 63%);
+  color: #051827;
+}
+
+nav .links .cook:hover {
+  background: hsl(304 100% 70%);
+  color: #051827;
+}
+
+nav .links .design:hover {
+  background: hsl(64 100% 50%);
+  color: #051827;
+}
+
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 720px) {
+
+  nav .links {
+    display: none;
+  }
+
+}
+
+@media (prefers-color-scheme: dark) {
+
+  body {
+    background-color: #051827;
+  }
+  
+  body * {
+    color: #fff;
+  }
+
+  h1 a {
+    color: #051827;
+  }
+
+}
