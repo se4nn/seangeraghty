@@ -235,6 +235,10 @@ nav {
   scale: 0.5;
 }
 
+.canvas img {
+  height: 100%;
+}
+
 /* Media Queries */
 
 @media only screen and (max-width: 720px) {
