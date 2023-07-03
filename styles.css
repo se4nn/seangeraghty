@@ -214,7 +214,7 @@ nav {
   display: flex;
   gap: 5vw;
   flex-flow: row nowrap;
-  align-items: center;
+  align-items: flex-start;
   height: 100%;
 }
 
