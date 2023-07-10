@@ -1,20 +1,28 @@
 // HORIZONTAL SCROLL
 
 const spaceHolder = document.querySelector('.space-holder');
-const sticky = document.querySelector('.sticky');
 const horizontal = document.querySelector('.horizontal');
 spaceHolder.style.height = `${calcDynamicHeight(horizontal)}px`;
 
 function calcDynamicHeight(ref) {
   const vw = window.innerWidth;
-  const vh = sticky.offsetHeight;
-  const objectWidth = ref.scrollWidth;
-  return objectWidth - vw + vh + (0.1 * vw);
+  const vh = window.innerHeight;
+  const panelCount = document.querySelectorAll('.panel').length;
+  const gapSize = 5; // Adjust the gap size as needed
+  const totalGap = (panelCount - 1) * gapSize;
+
+  if (vw >= 720) {
+    return (panelCount * (0.8 * vh)) + (totalGap * (vw / 100)); // 80vh per panel including gaps
+  } else {
+    return (panelCount * (0.8 * vw)) + (totalGap * 1.8 * (vw / 100)); // 80vw per panel including gaps
+  }
 }
 
 window.addEventListener('scroll', () => {
-  const sticky = document.querySelector('.sticky');
-  horizontal.style.transform = `translateX(-${sticky.offsetTop}px)`;
+  requestAnimationFrame(() => {
+    const sticky = document.querySelector('.sticky');
+    horizontal.style.transform = `translateX(-${sticky.offsetTop}px)`;
+  });
 });
 
 window.addEventListener('resize', () => {

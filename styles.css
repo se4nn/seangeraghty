@@ -199,8 +199,8 @@ nav {
 
 .sticky {
   position: sticky;
-  top: 96px;
-  height: calc(100vh - 96px - 80px);
+  top: clamp(16px, 4vw, 4vw);
+  height: 80vh;
 }
 
 .horizontal {
@@ -221,7 +221,7 @@ nav {
 .panel {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   gap: 16px;
   height: 100%;
   width: 80vh;
@@ -250,7 +250,7 @@ nav {
   }
 
   .sticky {
-    height: 104vw;
+    height: 100vw;
   }
 
   .panel {
