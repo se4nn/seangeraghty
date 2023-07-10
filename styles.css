@@ -199,7 +199,7 @@ nav {
 
 .sticky {
   position: sticky;
-  top: clamp(16px, 4vw, 4vw);
+  top: 10vh;
   height: 80vh;
 }
 
