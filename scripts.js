@@ -18,12 +18,16 @@ function calcDynamicHeight(ref) {
   }
 }
 
-window.addEventListener('scroll', () => {
+$(document.body).on('touchmove', scrollGallery); // for mobile
+$(window).on('scroll', scrollGallery); 
+
+// callback
+function scrollGallery(){ 
   requestAnimationFrame(() => {
     const sticky = document.querySelector('.sticky');
     horizontal.style.transform = `translateX(-${sticky.offsetTop}px)`;
   });
-});
+}
 
 window.addEventListener('resize', () => {
   spaceHolder.style.height = `${calcDynamicHeight(horizontal)}px`;
