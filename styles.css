@@ -50,6 +50,7 @@
   --pink: #FBDCE9;
   --orange: #FF5422;
   --yellow: #FFF12F;
+  --red: #CF0105;
   --peach: #FCDDC0;
   --dark-green: #3A490D;
 }
@@ -156,6 +157,10 @@ nav {
   color: var(--dark);
   background-color: var(--yellow);
 }
+.color-red {
+  color: var(--light);
+  background-color: var(--red);
+}
 .color-peach {
   color: var(--dark);
   background-color: var(--peach);
@@ -227,6 +232,10 @@ nav {
   width: 80vh;
 }
 
+.panel.large {
+  width: calc(80vh * 1.2);
+}
+
 .canvas {
   margin-bottom: 8px;
 }
@@ -255,6 +264,11 @@ nav {
 
   .panel {
     width: 80vw;
+    height: auto;
+  }
+
+  .panel.large {
+    width: calc(80vw *1.2);
     height: auto;
   }
 
