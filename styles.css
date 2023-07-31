@@ -278,6 +278,9 @@ input, select {
 .event-info a {
   line-height: 140%;
   font-weight: 400;
+  border: none;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
 }
 
 .pageclip-form {
