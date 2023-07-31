@@ -377,4 +377,8 @@ label, input, .pageclip-form__submit{
     grid-template-columns: 1fr;
   }
 
+  .event {
+    gap: 16px;
+  }
+
 }
