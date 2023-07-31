@@ -342,7 +342,8 @@ label, input, .pageclip-form__submit{
 }
 
 .divider {
-  margin: clamp(-4vw, -4vw, -16px);
+  margin-left: clamp(-4vw, -4vw, -16px);
+  margin-right: clamp(-4vw, -4vw, -16px);
 }
 
 /* Media Queries */
