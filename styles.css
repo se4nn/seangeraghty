@@ -249,6 +249,98 @@ nav {
   box-shadow: 0px 8px 12px -2px rgba(42, 40, 39, 0.48);
 }
 
+/* FORM */
+
+input, select {
+  padding: 16px;
+  background: none;
+  border-radius: 8px;
+  font-family: 'PP Mori', sans-serif;
+  border: 2px solid var(--dark);
+  height: 24px;
+}
+
+.event {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  width: auto;
+}
+
+.event-info {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.event-info a {
+  line-height: 140%;
+  font-weight: 400;
+}
+
+.pageclip-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  flex-wrap: wrap;
+  gap: 24px;
+  width: 100%;
+  align-items: end;
+}
+
+.cta-question {
+  display: flex;
+  flex-direction: column;
+}
+
+.cta-question label {
+  margin-bottom: 8px;
+}
+
+.pageclip-form__submit {
+  display: block;
+  border: none;
+  background-color: var(--dark);
+  color: var(--light);
+  height: 60px;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.event-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+label, input, .pageclip-form__submit{
+  font-size: clamp(17px, 1.4vw, 23px);
+  line-height: 140%;
+}
+
+.about span {
+  font-style: italic;
+  font-weight: 400;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgba(42, 40, 39, 0.48);
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: rgba(42, 40, 39, 0.48);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: rgba(42, 40, 39, 0.48);
+}
+
+.divider {
+  margin: clamp(-4vw, -4vw, -16px);
+}
+
 /* Media Queries */
 
 @media only screen and (max-width: 720px) {
@@ -275,6 +367,10 @@ nav {
   a {
     border-bottom-width: 1px;
     font-weight: 400;
+  }
+
+  .pageclip-form {
+    grid-template-columns: 1fr;
   }
 
 }
