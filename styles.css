@@ -306,6 +306,7 @@ input, select {
   height: 60px;
   padding: 16px;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 .event-detail {
